@@ -260,6 +260,7 @@ color:#FFF;
 font-size:25px;
 text-align: center;
 font-family: Tw Cen MT,serif;
+box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
 
 }
 
@@ -334,11 +335,13 @@ border: 1px solid #9B5700;
 input:focus, button:focus textarea:focus{
 	border-radius:31px;
 	border:1px solid #000;
+        box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
 }
 
 button[type="submit"]:hover{
-	position:absolute;	
-	background:#2EE71B;
+box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+background-color: #FFF;
+color:#000;
 	cursor:pointer;
 }
 
@@ -372,19 +375,16 @@ button[type="submit"]:hover{
   margin-left:430px;
   width:200px;
   border-radius:25px;	
-  background-color: #fff;
-  border-style: solid;
-  border-color: #0A6316;
-  border-width: 1px;
+  background-color: #A4F6C2;
   padding: 14px 25px;
   text-align: center; 
   text-decoration: none;
   display: inline-block;
   font:34px normal normal uppercase;
   font-family: Tw Cen MT,serif;
-  text-shadow: 0px 3px 6px #C6C6C6;
+  text-shadow: 0px 10px 8px #C6C6C6;
   position: absolute;
-  box-shadow: 0px 3px 2px #000;
+  box-shadow: 0px 3px 6px rgba(0,79,29,0.8);
 }
 
 .ingreso {
@@ -395,9 +395,7 @@ button[type="submit"]:hover{
   height: 20px;
   border-radius:25px;	
   background-color: #fff;
-  border-style: solid;
-  border-color: #0A6316;
-  border-width: 1px;
+  
   padding: 10px 25px;
   text-align: center; 
   text-decoration: none;
@@ -406,19 +404,17 @@ button[type="submit"]:hover{
   font-family: Tw Cen MT,serif;
   text-shadow: 0px 3px 6px #C6C6C6;
   position: absolute;
+  box-shadow: 0px 3px 6px rgba(0,79,29,0.2);
 }
 
 .solicitud {
   margin-bottom:20px; 
   margin-top: 8px;
-  margin-left:700px;
-  width:320px;
+  margin-left:850px;
+  width:220px;
   height: 20px;
   border-radius:25px;	
   background-color: #fff;
-  border-style: solid;
-  border-color: #0A6316;
-  border-width: 1px;
   padding: 10px 25px;
   text-align: center; 
   text-decoration: none;
@@ -427,33 +423,19 @@ button[type="submit"]:hover{
   font-family: Tw Cen MT,serif;
   text-shadow: 0px 3px 6px #C6C6C6;
   position: absolute;
+  box-shadow: 0px 3px 6px rgba(0,79,29,0.2);
 }
 
  .c:hover {
-  background-color: #96F59D;
-  color: white;
-  padding: 14px 25px;
-  text-align: center; 
-  text-decoration: none;
-  display: inline-block;
+ box-shadow: 0px 3px 6px rgba(12,38,9,1);
  }
 
   .ingreso:hover {
-  background-color: #96F59D;
-  color: white;
-  padding: 10px 25px;
-  text-align: center; 
-  text-decoration: none;
-  display: inline-block;
+  box-shadow: 0px 3px 6px rgba(12,38,9,0.6);
  }
  
  .solicitud:hover {
-  background-color: #96F59D;
-  color: white;
-  padding: 10px 25px;
-  text-align: center; 
-  text-decoration: none;
-  display: inline-block;
+  box-shadow: 0px 3px 6px rgba(12,38,9,0.6);
  }
  
 .container {

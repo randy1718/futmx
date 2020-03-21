@@ -52,7 +52,7 @@ and open the template in the editor.
 }
 
 body{
-background-color: #ffffff;
+background: url("imagenes/minimalist.jpg");
 background-size:cover;
 height: 593px;
 overflow-x: hidden;
@@ -454,12 +454,7 @@ button[type="submit"]:hover{
  }
 
   .ingreso:hover {
-  background-color: #96F59D;
-  color: white;
-  padding: 10px 25px;
-  text-align: center; 
-  text-decoration: none;
-  display: inline-block;
+ box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
  }
  
  .solicitud:hover {
@@ -471,19 +466,53 @@ button[type="submit"]:hover{
   display: inline-block;
  }
  
- .equipo{
+ .liga{
      width: 300px;
      height: 280px;
-     top:200px;
+     top:300px;
      left: 200px;
      box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
      position: absolute;
      border-radius: 31px;
+     background-color: #ffffff;
  }
  
- .equipo:hover {
- box-shadow: 0px 3px 10px rgba(12,38,9,0.5);
+ .liga:hover {
+ box-shadow: 0px 3px 10px rgba(0,0,0,1);
  }
+ 
+ 
+ .solicitud_liga{
+     width: 300px;
+     height: 280px;
+     top:300px;
+     left: 601.2px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .solicitud_liga:hover {
+ box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+ 
+ 
+ .creacion_liga{
+     width: 300px;
+     height: 280px;
+     top:300px;
+     left: 1000px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .creacion_liga:hover {
+  box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+ 
  
   .im{
      width: 300.3px;
@@ -494,4 +523,34 @@ button[type="submit"]:hover{
      border-top-right-radius: 31px;
  }
  
+ .txt{
+  position:  absolute;
+  margin-left: 26px;
+  margin-right:26px;
+  margin-top: 200px;
+  font:60px normal normal uppercase;
+  font-family: Tw Cen MT,serif;
+  text-align: center; 
+ }
+ 
+ .txt1{
+  position:  absolute;
+  margin-left: 89px;
+  margin-right:89px;
+  margin-top: 200px;
+  font:60px normal normal uppercase;
+  font-family: Tw Cen MT,serif;
+  text-align: center; 
+ }
+ 
+ .saludo{
+   top:100px;
+   left:200px;
+   right:200px;
+   position: absolute;
+   font:110px normal normal uppercase;
+   font-family: Tw Cen MT,serif; 
+   text-align: center; 
+   font-weight: bold;
+ }
 
