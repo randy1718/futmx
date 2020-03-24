@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-
+<?php
+        $host='localhost';
+        $user="root";
+        $password='';
+        $database='proyect';
+        $conexion= mysqli_connect($host, $user, $password, $database) or die("problemas de conexion");
+        session_start();
+        
+?>
 <html>
     <head>
         <title>FUTMX</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="interfaz.css">
+        <link rel="stylesheet" type="text/css" href="inter_liga.css">
         <link rel="icon" href="imagenes/balon.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="deslizar.js"></script>
@@ -13,7 +21,10 @@
     </head>
     <body>
         <div style="position: relative">
-            
+            <div class="ad_liga">
+              <div class="saludo">Hola de nuevo, <?php echo $_SESSION["usuario"] ?> !</div>   
+            </div>    
+           
         <div class="rectangulo">
             <a href="Start.html">
             <img class="logo" src="imagenes/logo.png">  
@@ -21,45 +32,44 @@
             <div class="perfil" id="boton">
                 
             </div>
-           
 
         </div>
             
-            <div class="saludo">Hola de nuevo, Juan!</div>
+            
+            
             <a href="ligas.html" name="Opcion" value="1" style="color:#000000">
-             <div class="liga">  
+             <div class="canchas">  
 
-                <img class="im" src="imagenes/equipo.jpg"> 
-                <p class="txt1">Ligas</p>
+                 <img class="im" src="imagenes/canchas.jpg"> 
+                <p class="txt2">Canchas</p>
 
              </div>
             </a> 
             
              <a href="solicitudes.html" name="Opcion" value="1" style="color:#000000">
-             <div class="solicitud_liga">  
+             <div class="tabla_posiciones">  
 
-                <img class="im" src="imagenes/equipo.jpg"> 
-                <p class="txt">Solicitudes</p>
+                 <img class="im" src="imagenes/posiciones.png"> 
+                <p class="txt3">Posiciones</p>
 
              </div>
             </a>
             
              <a href="crear_liga.html" name="Opcion" value="1" style="color:#000000">
-             <div class="creacion_liga">  
+             <div class="partidos">  
 
-                <img class="im" src="imagenes/equipo.jpg"> 
-                <p class="txt">Crear liga</p>
+                 <img class="im" src="imagenes/vs.jfif"> 
+                <p class="txt4">Partidos</p>
 
              </div>
             </a>
             <div id="capa">
                 
             </div>
-             <div id="slidebar">
-                <a href="Start.html" class="salir" name="Opcion" value="1" >Salir</a>  
+            <div id="slidebar">
+                <a href="Start.html" class="salir">Salir</a>   
             </div>
             
         </div>
-        
     </body>
 </html>

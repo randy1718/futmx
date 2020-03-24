@@ -1,9 +1,11 @@
 
+
 body{
-background:url("imagenes/combinado.jpg");
+background-color:white;
 background-size:cover;
 height: 593px;
 overflow-x: hidden;
+
 }
 
 .logo{
@@ -16,9 +18,6 @@ overflow-x: hidden;
     align-items: center;
     position: absolute;
     opacity: 0.7;
-    transform: rotate(360deg);  
-    animation: 1s rotate linear infinite;
-       -webkit-transition: 4s all;
     
 }
 
@@ -47,6 +46,11 @@ overflow-x: hidden;
      margin-top: -8px;
      margin-left: -7px;
      margin-right: 0px;
+     border:0px solid;
+     border-color: #707070;
+     position: absolute;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+
 }
 
 .linea_izquierda{
@@ -221,7 +225,6 @@ color:#FFF;
 font-size:25px;
 text-align: center;
 font-family: Tw Cen MT,serif;
-box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
 
 }
 
@@ -296,13 +299,11 @@ border: 1px solid #9B5700;
 input:focus, button:focus textarea:focus{
 	border-radius:31px;
 	border:1px solid #000;
-        box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
 }
 
 button[type="submit"]:hover{
-box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
-background-color: #FFF;
-color:#000;
+	position:absolute;	
+	background:#2EE71B;
 	cursor:pointer;
 }
 
@@ -336,16 +337,19 @@ color:#000;
   margin-left:430px;
   width:200px;
   border-radius:25px;	
-  background-color: #A4F6C2;
+  background-color: #fff;
+  border-style: solid;
+  border-color: #0A6316;
+  border-width: 1px;
   padding: 14px 25px;
   text-align: center; 
   text-decoration: none;
   display: inline-block;
   font:34px normal normal uppercase;
   font-family: Tw Cen MT,serif;
-  text-shadow: 0px 10px 8px #C6C6C6;
+  text-shadow: 0px 3px 6px #C6C6C6;
   position: absolute;
-  box-shadow: 0px 3px 6px rgba(0,79,29,0.8);
+  box-shadow: 0px 3px 2px #000;
 }
 
 .ingreso {
@@ -356,7 +360,9 @@ color:#000;
   height: 20px;
   border-radius:25px;	
   background-color: #fff;
-  
+  border-style: solid;
+  border-color: #0A6316;
+  border-width: 1px;
   padding: 10px 25px;
   text-align: center; 
   text-decoration: none;
@@ -365,17 +371,19 @@ color:#000;
   font-family: Tw Cen MT,serif;
   text-shadow: 0px 3px 6px #C6C6C6;
   position: absolute;
-  box-shadow: 0px 3px 6px rgba(0,79,29,0.2);
 }
 
 .solicitud {
   margin-bottom:20px; 
   margin-top: 8px;
-  margin-left:850px;
-  width:220px;
+  margin-left:700px;
+  width:320px;
   height: 20px;
   border-radius:25px;	
   background-color: #fff;
+  border-style: solid;
+  border-color: #0A6316;
+  border-width: 1px;
   padding: 10px 25px;
   text-align: center; 
   text-decoration: none;
@@ -384,79 +392,265 @@ color:#000;
   font-family: Tw Cen MT,serif;
   text-shadow: 0px 3px 6px #C6C6C6;
   position: absolute;
-  box-shadow: 0px 3px 6px rgba(0,79,29,0.2);
 }
 
  .c:hover {
- box-shadow: 0px 3px 6px rgba(12,38,9,1);
+  background-color: #96F59D;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
  }
 
   .ingreso:hover {
-  box-shadow: 0px 3px 6px rgba(12,38,9,0.6);
+ box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
  }
  
  .solicitud:hover {
-  box-shadow: 0px 3px 6px rgba(12,38,9,0.6);
+  background-color: #96F59D;
+  color: white;
+  padding: 10px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
  }
  
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 17px;
-  -webkit-user-select: none;
-}
+ .liga{
+     width: 300px;
+     height: 280px;
+     top:300px;
+     left: 200px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .liga:hover {
+ box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+ 
+ 
+ .solicitud_liga{
+     width: 300px;
+     height: 280px;
+     top:300px;
+     left: 601.2px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .solicitud_liga:hover {
+ box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+ 
+ 
+ .creacion_liga{
+     width: 300px;
+     height: 280px;
+     top:300px;
+     left: 1000px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .creacion_liga:hover {
+  box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+ 
+ 
+  .im{
+     width: 300.3px;
+     height: 190px;;
+     position:  absolute;
+     object-fit: cover;
+     border-top-left-radius: 31px;
+     border-top-right-radius: 31px;
+ }
+ 
+ .txt{
+  position:  absolute;
+  margin-left: 26px;
+  margin-right:26px;
+  margin-top: 200px;
+  font:60px normal normal uppercase;
+  font-family: Tw Cen MT,serif;
+  text-align: center; 
+ }
+ 
+ .txt1{
+  position:  absolute;
+  margin-left: 89px;
+  margin-right:89px;
+  margin-top: 200px;
+  font:60px normal normal uppercase;
+  font-family: Tw Cen MT,serif;
+  text-align: center; 
+ }
+ 
+ .saludo{
+   top:100px;
+   left:200px;
+   right:200px;
+   position: absolute;
+   font:110px normal normal uppercase;
+   font-family: Tw Cen MT,serif; 
+   text-align: center; 
+   font-weight: bold;
+ }
+ 
+ .perfil{
+     width: 50px;
+     height: 50px;
+     border-radius:30px;
+     position: absolute;
+     background-color: white;
+     border:1px solid;
+     margin-left: 1460px;
+     top:4px;
+     cursor:pointer;
+ }
+ 
+ #slidebar{
+     top:53px;
+     left: 1582px;
+     width: 400px;
+     height:590px;
+    background-color: rgba(255,255,255,1);
+    position: absolute;
+    transition: all 200ms linear;
+    border-bottom-left-radius: 31px;
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+    
+   
+ }
+ #slidebar.active{
+     left:1126px;
+ }
 
-/* Hide the browser's default radio button */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
+ .salir{
+     position: absolute;
+     margin-top: 500px;
+     width: 100px;
+     margin-left: 125px;
+     margin-right: 125px;
+     background-color: #5FBAA7;
+     padding: 10px 25px;
+     text-align: center; 
+     text-decoration: none;
+     display: inline-block;
+     font:20px normal normal uppercase;
+     font-family: Tw Cen MT,serif;
+     border-radius: 31px;
+     color:black;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+     
+ }
+ .salir:hover{
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+ }
 
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
-}
+ .capa{
+     position:absolute;
+     padding: 0px;
+     margin-left:-10px;
+     margin-top: 51px;
+     width: 1610px;
+     height: 703px;
+       
+     background: rgba(0,0,0,0.5);
+ }
+ 
+ .ad_liga{
+     position: absolute;
+     width: 1550px;
+     height:350px;
+     background-color: #96F59D;
+     margin-top: 52px;
+     margin-left: -10px;
+ }
+ 
+ 
+ .canchas{
+     width: 300px;
+     height: 280px;
+     top:450px;
+     left: 200px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .canchas:hover {
+ box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+ 
+ 
+ .tabla_posiciones{
+     width: 300px;
+     height: 280px;
+     top:450px;
+     left: 601.2px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .tabla_posiciones:hover {
+ box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+ 
+ 
+ .partidos{
+     width: 300px;
+     height: 280px;
+     top:450px;
+     left: 1000px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .partidos:hover {
+  box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+ 
+  .txt2{
+  position:  absolute;
+  margin-left: 50px;
+  margin-right:50px;
+  margin-top: 200px;
+  font:60px normal normal uppercase;
+  font-family: Tw Cen MT,serif;
+  text-align: center; 
+ }
+ 
+  .txt3{
+  position:  absolute;
+  margin-left: 34px;
+  margin-right:34px;
+  margin-top: 200px;
+  font:60px normal normal uppercase;
+  font-family: Tw Cen MT,serif;
+  text-align: center; 
+ }
+ 
+  .txt4{
+  position:  absolute;
+  margin-left: 53.4px;
+  margin-right:53.4px;
+  margin-top: 200px;
+  font:60px normal normal uppercase;
+  font-family: Tw Cen MT,serif;
+  text-align: center; 
+ }
 
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #98120C;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.container .checkmark:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-}
+ 

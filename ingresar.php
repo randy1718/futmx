@@ -25,11 +25,11 @@ $contrasena = filter_input(INPUT_POST, "c");
 
 $_SESSION["usuario"] = $usuar;
 
-$sql = "select NombreUsuario, Contraseña from usuario where NombreUsuario='$usuar' and Contraseña='$contrasena'";
-
+$sql = "select NombreUsuario, Contraseña from usuario where NombreUsuario='$usuar' and Contraseña='$contrasena' and idTipoUsuario='1'";
+$sql2 = "select NombreUsuario, Contraseña from usuario where NombreUsuario='$usuar' and Contraseña='$contrasena' and idTipoUsuario='2'";
 
 $ejecutar = mysqli_query($conexion, $sql) or die("problems:" . mysqli_error($conexion));
-
+$ejecutar2 = mysqli_query($conexion, $sql2) or die("problems:" . mysqli_error($conexion));
 
 if (!$ejecutar) {
     echo "hubo algun error";
@@ -37,10 +37,13 @@ if (!$ejecutar) {
     echo"alright";
 }
 $reg = mysqli_fetch_array($ejecutar);
+$reg2 = mysqli_fetch_array($ejecutar2);
 
 if ($reg) {
     header("location:interfaz_administrador.html");
-} else {
+} else if ($reg2) {
+    header("location:interfaz_administrador_liga.php");
+}else {
     echo'<script type="text/javascript">
     alert("¡El usuario o la contraseña no coinciden!");
     window.location.href="ingresar.html";

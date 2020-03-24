@@ -56,6 +56,7 @@ background: url("imagenes/minimalist.jpg");
 background-size:cover;
 height: 593px;
 overflow-x: hidden;
+
 }
 
 .logo{
@@ -553,4 +554,124 @@ button[type="submit"]:hover{
    text-align: center; 
    font-weight: bold;
  }
+ 
+ .perfil{
+     width: 50px;
+     height: 50px;
+     border-radius:30px;
+     position: absolute;
+     background-color: white;
+     border:1px solid;
+     margin-left: 1460px;
+     top:4px;
+     cursor:pointer;
+ }
+ 
+ #slidebar{
+     top:53px;
+     left: 1582px;
+     width: 400px;
+     height:590px;
+    background-color: rgba(255,255,255,1);
+    position: absolute;
+    transition: all 200ms linear;
+    border-bottom-left-radius: 31px;
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+    
+   
+ }
+ #slidebar.active{
+     left:1126px;
+ }
 
+ .salir{
+     position: absolute;
+     margin-top: 500px;
+     width: 100px;
+     margin-left: 125px;
+     margin-right: 125px;
+     background-color: #5FBAA7;
+     padding: 10px 25px;
+     text-align: center; 
+     text-decoration: none;
+     display: inline-block;
+     font:20px normal normal uppercase;
+     font-family: Tw Cen MT,serif;
+     border-radius: 31px;
+     color:black;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+     
+ }
+ .salir:hover{
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+ }
+
+ .capa{
+     position:absolute;
+     padding: 0px;
+     margin-left:-10px;
+     margin-top: 51px;
+     width: 1610px;
+     height: 703px;
+       
+     background: rgba(0,0,0,0.5);
+ }
+ 
+ .ad_liga{
+     position: absolute;
+     width: 1550px;
+     height:350px;
+     background-color: #96F59D;
+     margin-top: 52px;
+     margin-left: -10px;
+ }
+ 
+ 
+ .canchas{
+     width: 300px;
+     height: 280px;
+     top:450px;
+     left: 200px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .canchas:hover {
+ box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+ 
+ 
+ .tabla_posiciones{
+     width: 300px;
+     height: 280px;
+     top:450px;
+     left: 601.2px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .tabla_posiciones:hover {
+ box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+ 
+ 
+ .partidos{
+     width: 300px;
+     height: 280px;
+     top:450px;
+     left: 1000px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .partidos:hover {
+  box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+
+ 
