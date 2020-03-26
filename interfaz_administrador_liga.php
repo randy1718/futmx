@@ -26,7 +26,7 @@
             </div>    
            
         <div class="rectangulo">
-            <a href="Start.html">
+            <a href="interfaz_administrador_liga.php">
             <img class="logo" src="imagenes/logo.png">  
             </a>
             <div class="perfil" id="boton">
