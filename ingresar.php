@@ -40,7 +40,7 @@ $reg = mysqli_fetch_array($ejecutar);
 $reg2 = mysqli_fetch_array($ejecutar2);
 
 if ($reg) {
-    header("location:interfaz_administrador.html");
+    header("location:interfaz_administrador.php");
 } else if ($reg2) {
     header("location:interfaz_administrador_liga.php");
 }else {

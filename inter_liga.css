@@ -623,6 +623,22 @@ button[type="submit"]:hover{
   box-shadow: 0px 3px 10px rgba(0,0,0,1);
  }
  
+  .equipos{
+     width: 300px;
+     height: 280px;
+     top:800px;
+     left: 400px;
+     margin-bottom: 100px;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+     position: absolute;
+     border-radius: 31px;
+     background-color: #ffffff;
+ }
+ 
+ .equipos:hover {
+  box-shadow: 0px 3px 10px rgba(0,0,0,1);
+ }
+ 
   .txt2{
   position:  absolute;
   margin-left: 50px;
@@ -651,6 +667,67 @@ button[type="submit"]:hover{
   font:60px normal normal uppercase;
   font-family: Tw Cen MT,serif;
   text-align: center; 
+ }
+ 
+   .txt5{
+  position:  absolute;
+  margin-left: 56.4px;
+  margin-right:56.4px;
+  margin-top: 200px;
+  font:60px normal normal uppercase;
+  font-family: Tw Cen MT,serif;
+  text-align: center; 
+ }
+ 
+  .editar{
+    position: absolute;
+     margin-top: 300px;
+     width: 200px;
+     margin-left: 75px;
+     margin-right: 75px;
+     background-color: #5FBAA7;
+     padding: 10px 25px;
+     text-align: center; 
+     text-decoration: none;
+     display: inline-block;
+     font:20px normal normal uppercase;
+     font-family: Tw Cen MT,serif;
+     border-radius: 31px;
+     color:black;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+ }
+ 
+ .informacion{
+     width:1200px;
+     height: 600px;
+     position: absolute;
+     border-radius: 31px;
+     margin-top:100px;
+     margin-left:151.2px;
+     margin-right:151.2px;
+     background-color: white;
+     box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+     
+ }
+ *.tit{
+     font:40px normal normal uppercase;
+     font-family: Tw Cen MT,serif;
+     position: absolute;
+     margin-top: 15px;
+     margin-left: 200px;
+     
+ }
+ 
+  
+ .foto{
+     width: 200px;
+     height: 200px;
+     border-radius:50%;
+     position: absolute;
+     background-color: black;
+     margin-top: 30px;
+     margin-left: 100px;
+     margin-right: 100px;
  }
 
  

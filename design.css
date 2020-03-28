@@ -507,4 +507,18 @@ outline: none;
     margin-left: 520px;
     margin-right: 30px;
     padding: 20px;
+    position: absolute;
+}
+
+.mensaje{
+    position: absolute;
+    margin-top: 1150px;
+    padding: 40px;
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 570px;
+    text-align: center;
+    font-family: Tw Cen MT,serif;
+    font-size: 40px;
 }

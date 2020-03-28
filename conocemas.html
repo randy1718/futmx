@@ -1,0 +1,117 @@
+
+<html DOCTYPE!>
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Questrial&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="design.css">
+<title>Conoce más</title>
+	
+	<script>
+ function myFunction(){
+		 document.getElementById("tab1").click();}
+		
+	
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("enlace");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+		
+		
+	
+	</script>
+</head>
+	
+	<body class="b1" onload="myFunction();" >
+		
+		
+		<div class="titulo">
+	<span style="color:green">F</span>
+    <span style="color:white">u</span>
+    <span style="color:red">T</span>MX
+			<p class="descripcion">La plataforma perfecta para los amantes del fútbol ❤️⚽</p>
+		</div>
+
+						
+		<div width=100% style=" margin-top:1%; " class="tab">
+		<a class="enlace" id="tab1" onclick="openCity(event, 'AL');" >Administrador de Liga </a>
+		<a class="enlace" id="tab2" onclick="openCity(event, 'AE');">Administrador de Equipo </a>
+		<a class="enlace" id="tab3" onclick="openCity(event, 'J');">Jugador </a>
+			
+		</div><br><br>
+		
+				<div id="AL" class="tabcontent">
+					<img src="f1.jpg" width=40% style="border-radius:20px; float: left; margin-left:20px;" >
+					<div style="float: right; width:55%; margin-right:20px; ">
+						<div class="titulo1"> Administador de Liga </div><br>
+						<div class="texto" >Como admistrador de liga podrás Gestionar tus propias ligas como todo un profesional:<br>
+							✔️ Podrás crear las ligas que tengas a cargo, la cantidad de equipos por liga, y jugadores del equipo.<br>
+							✔️ Podrás personalizar cada liga con sus horarios de juego, canchas disponibles para jugarla y sus subcategorías (masculino, femenino,   5, 7 u 11). <br>
+							✔️ Administrar la programación de cada partido, saber si los equipos pagaron el arbitraje además de conocer dónde y cuándo se realizarán los partidos de tu liga.<br>
+							✔️ Agregar los resultados de cada partido para alimentar la tabla de posiciones.
+						
+					</div></div>
+		</div>
+		
+						<div id="AE" class="tabcontent">
+					<img src="f3.jpg" width=40% style="border-radius:20px; float: left; margin-left:20px;" >
+					<div style="float: right; width:55%; margin-right:20px; ">
+						<div class="titulo1"> Administador de Equipo </div><br>
+						<div class="texto" >Serás como el técnico y capitás de tu equipo:<br>
+							✔️ Podrás solicitar al administrador de liga añadir a un jugador a tu equipo cuando el reglamento lo permita.<br>
+							✔️ Podrás personalizar los datos de tu equipo. <br>
+							✔️ Sabrás dónde y cuando son los próximos partidos de tu liga.<br>
+							✔️ Sabrás la posición de tu equipo, junto con las estadísticas de la liga, partidos jugado, goles a favor y en contra y demás.<br>
+							✔️ Conocerás los métodos y cuetas del pago de arbitraje 
+						
+					</div></div>
+		</div>
+		
+		
+						<div id="J" class="tabcontent">
+					<img src="f2.jpg" width=40% style="border-radius:20px; float: left; margin-left:20px;" >
+					<div style="float: right; width:55%; margin-right:20px; ">
+						<div class="titulo1"> Jugador </div><br>
+						<div class="texto" >La parte más importante del equipo:<br>
+							✔️ Podrás crear un increíble perfil para destacar en tu equipo.<br>
+							✔️ Conocerás dónde y cuando se jugarán tus próximos partidos. <br>
+							✔️ Sabrás en qué posición va tu equipo, junto con sus estadísticas.<br>
+							✔️ Tendrás acceso al historial de partidos de tu equipo en la liga actual, junto con el cronograma de préximos partidos
+						
+					</div></div>
+		</div>
+		
+
+	
+		
+		
+	</body>
+	
+</html>
+
+
+
+
+<img  class="fotoPerfil" src="<?php 
+                header("Content-type:".$mostrar['tipo_foto']);
+                echo $mostrar['foto'] 
+                        ?> ">
+                        
+                        <img class="fp" src="<?php 
+                     header("Content-type:".$mostrar['tipo_foto']);
+                     echo $mostrar['foto']  ?>"/>

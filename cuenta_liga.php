@@ -3,9 +3,22 @@
         $host='localhost';
         $user="root";
         $password='';
-        $database='proyect';
+        $database='futmx';
         $conexion= mysqli_connect($host, $user, $password, $database) or die("problemas de conexion");
         session_start();
+        
+         $usuar= $_SESSION["usuario"];
+        
+        $consulta="select NombreUsuario, Correo from usuario where NombreUsuario='$usuar'";
+        $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
+        
+        if(!$ejecutar){
+            echo "hubo algun error";
+        }else{
+            echo"";
+        }
+              
+       while($mostrar= mysqli_fetch_array($ejecutar)){  
         
 ?>
 <html>
@@ -27,7 +40,7 @@
         <div style="position: relative">
             
         <div class="rectangulo">
-            <a href="interfaz_administrador.php">
+            <a href="interfaz_administrador_liga.php">
             <img class="logo" src="imagenes/logo.png">  
             </a>
             <div class="perfil" id="boton">
@@ -37,33 +50,26 @@
 
         </div>
             
-            <div class="saludo">Hola de nuevo, Juan!</div>
-            <a href="ligas.html" name="Opcion" value="1" style="color:#000000">
-             <div class="liga">  
+            <div class="informacion">
+                
+                <div class="tit">Datos personales </div>
+                <form action="ingresar.php" method="POST">
+         
+                <input  class="usuario" type="text" id="1" name="u"  value="<?php echo $mostrar['NombreUsuario']  ?>" required><br>
+                 <input  class="password" type="text" id="pass" name="c" value="<?php echo $mostrar['Correo']  ?>" required><br>
+                <?php
+        }
+            ?>
+               
 
-                <img class="im" src="imagenes/equipo.jpg"> 
-                <p class="txt1">Ligas</p>
-
-             </div>
-            </a> 
+                
+                <button type="submit"  class="entrar" name="subir">Actualizar</button><br>
+              
+            </form>
+                
+            </div>
             
-             <a href="solicitudes.html" name="Opcion" value="1" style="color:#000000">
-             <div class="solicitud_liga">  
-
-                <img class="im" src="imagenes/equipo.jpg"> 
-                <p class="txt">Solicitudes</p>
-
-             </div>
-            </a>
             
-             <a href="crear_liga.html" name="Opcion" value="1" style="color:#000000">
-             <div class="creacion_liga">  
-
-                <img class="im" src="imagenes/equipo.jpg"> 
-                <p class="txt">Crear liga</p>
-
-             </div>
-            </a>
             <div id="capa">
                 
             </div>

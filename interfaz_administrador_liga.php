@@ -3,7 +3,7 @@
         $host='localhost';
         $user="root";
         $password='';
-        $database='proyect';
+        $database='futmx';
         $conexion= mysqli_connect($host, $user, $password, $database) or die("problemas de conexion");
         session_start();
         
@@ -22,7 +22,8 @@
     <body>
         <div style="position: relative">
             <div class="ad_liga">
-              <div class="saludo">Hola de nuevo, <?php echo $_SESSION["usuario"] ?> !</div>   
+              <div class="saludo">Hola de nuevo, <?php echo $_SESSION["usuario"] ?> !</div>  
+              
             </div>    
            
         <div class="rectangulo">
@@ -37,10 +38,10 @@
             
             
             
-            <a href="ligas.html" name="Opcion" value="1" style="color:#000000">
+            <a href="ligas.html" name="Opcion" value="1" style="color:#000000" title="Canchas" onmouseover="window.status='Canchas';return true" onmouseout="window.status='';return true" >
              <div class="canchas">  
 
-                 <img class="im" src="imagenes/canchas.jpg"> 
+                 <img class="im" src="imagenes/canchas.jpg" > 
                 <p class="txt2">Canchas</p>
 
              </div>
@@ -63,11 +64,33 @@
 
              </div>
             </a>
+            
+            <a href="equipos.html" name="Opcion" value="1" style="color:#000000">
+             <div class="equipos">  
+
+                 <img class="im" src="imagenes/vs.jfif"> 
+                <p class="txt5">Equipos</p>
+
+             </div>
+            </a>
+            
+            
+            
+            
+            
             <div id="capa">
                 
             </div>
-            <div id="slidebar">
-                <a href="Start.html" class="salir">Salir</a>   
+             <div id="slidebar">
+                 <a href="interfaz_administrador_liga.php" onclick="window.open('cambiarFoto.html','popup','width=750,height=410, left=400,right=400, top=200')"> 
+                 <div class="foto">
+                   
+                </div>
+                 </a>
+
+                 
+                <a href="cuenta_liga.php" class="editar" name="Opcion" value="1" >Editar Cuenta</a> 
+                <a href="Start.html" class="salir" name="Opcion" value="1" >Salir</a>  
             </div>
             
         </div>
