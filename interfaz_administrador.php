@@ -53,7 +53,7 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
         </div>
             
             <div class="saludo">Hola de nuevo, Juan!</div>
-            <a href="ligas.html" name="Opcion" value="1" style="color:#000000">
+            <a href="ligas.php" name="Opcion" value="1" style="color:#000000">
              <div class="liga">  
 
                 <img class="im" src="imagenes/equipo.jpg"> 
@@ -62,7 +62,7 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
              </div>
             </a> 
             
-             <a href="solicitudes.html" name="Opcion" value="1" style="color:#000000">
+             <a href="solicitudes.php" name="Opcion" value="1" style="color:#000000">
              <div class="solicitud_liga">  
 
                 <img class="im" src="imagenes/equipo.jpg"> 

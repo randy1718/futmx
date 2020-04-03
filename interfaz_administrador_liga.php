@@ -7,6 +7,20 @@
         $conexion= mysqli_connect($host, $user, $password, $database) or die("problemas de conexion");
         session_start();
         
+        $usuar= $_SESSION["usuario"];
+$consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
+    $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
+     if(!$ejecutar){
+         echo "ocurrio un error";
+     }else{
+
+     }
+     
+      while($mostrar= mysqli_fetch_array($ejecutar)){  
+        $imagen=$mostrar["foto"];
+            
+            $im=base64_decode($imagen);
+        
 ?>
 <html>
     <head>
@@ -31,7 +45,9 @@
             <img class="logo" src="imagenes/logo.png">  
             </a>
             <div class="perfil" id="boton">
-                
+                <?php
+                echo "<img  class='fotoPerfil' src='data:".$mostrar["tipo_foto"].";base64,".base64_encode($imagen)."'>";
+                ?>
             </div>
 
         </div>
@@ -84,7 +100,9 @@
              <div id="slidebar">
                  <a href="interfaz_administrador_liga.php" onclick="window.open('cambiarFoto.html','popup','width=750,height=410, left=400,right=400, top=200')"> 
                  <div class="foto">
-                   
+                    <?php
+                echo "<img  class='fp' src='data:".$mostrar["tipo_foto"].";base64,".base64_encode($imagen)."'>";
+                ?>
                 </div>
                  </a>
 
@@ -92,6 +110,10 @@
                 <a href="cuenta_liga.php" class="editar" name="Opcion" value="1" >Editar Cuenta</a> 
                 <a href="Start.html" class="salir" name="Opcion" value="1" >Salir</a>  
             </div>
+            
+             <?php
+        }
+            ?>
             
         </div>
     </body>

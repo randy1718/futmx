@@ -9,16 +9,20 @@
         
         $usuar= $_SESSION["usuario"];
         
-        $consulta="select NombreUsuario,Correo from usuario where NombreUsuario='$usuar'";
+        $consulta="select NombreUsuario,Correo,foto,tipo_foto from usuario where NombreUsuario='$usuar'";
+      
         $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
         
-        if(!$ejecutar){
+        if(!$ejecutar ){
             echo "hubo algun error";
         }else{
             echo"";
         }
-              
+        
+            
        while($mostrar= mysqli_fetch_array($ejecutar)){  
+           $imagen=$mostrar["foto"];
+            
 ?>
 <html>
     <head>
@@ -43,7 +47,9 @@
             <img class="logo" src="imagenes/logo.png">  
             </a>
             <div class="perfil" id="boton">
-                
+                 <?php
+                echo "<img  class='fotoPerfil' src='data:".$mostrar["tipo_foto"].";base64,".base64_encode($imagen)."'>";
+                ?>
             </div>
            
 
@@ -58,9 +64,7 @@
                 <input  class="usuario" type="text" id="1" name="u"  value="<?php echo $mostrar['NombreUsuario']  ?>" required><br>
                 <input  class="password" type="text" id="pass" name="c" value="<?php echo $mostrar['Correo']  ?>" required><br>
                 
-                <?php
-        }
-            ?>
+            
 
                 
                 <button type="submit"  class="entrar" name="subir">Actualizar</button><br>
@@ -76,7 +80,9 @@
              <div id="slidebar">
                  <a href="interfaz_administrador.html" onclick="window.open('cambiarFoto.html','popup','width=750,height=410, left=400,right=400, top=200')"> 
                  <div class="foto">
-                   
+                   <?php
+                echo "<img  class='fp' src='data:".$mostrar["tipo_foto"].";base64,".base64_encode($imagen)."'>";
+                ?>
                 </div>
                  </a>
 
@@ -84,7 +90,9 @@
                 <a href="cuenta.php" class="editar" name="Opcion" value="1" >Editar Cuenta</a> 
                 <a href="Start.html" class="salir" name="Opcion" value="1" >Salir</a>  
             </div>
-            
+              <?php
+        }
+            ?>  
         </div>
         
 
