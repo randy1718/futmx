@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-        <?php
+<?php
 $host = 'localhost';
 $user = "root";
 $password = '';
@@ -20,30 +20,48 @@ session_start();
 
 
 $usuar = filter_input(INPUT_POST, 'Liga');
+$entrar=filter_input(INPUT_POST, 'Entrar');
+$eliminar=filter_input(INPUT_POST, 'Eliminar');
 
 $_SESSION["usuario"] = $usuar;
 
-$sql = "select NombreUsuario from usuario where NombreUsuario='$usuar' and idTipoUsuario='2'";
+if (isset($entrar)) {
+
+    $sql = "select NombreUsuario from usuario where NombreUsuario='$usuar' and idTipoUsuario='2'";
 
 
-$ejecutar = mysqli_query($conexion, $sql) or die("problems:" . mysqli_error($conexion));
+    $ejecutar = mysqli_query($conexion, $sql) or die("problems:" . mysqli_error($conexion));
 
-if (!$ejecutar) {
-    echo "hubo algun error";
-} else {
-    echo"alright".$usuar;
-}
-$reg = mysqli_fetch_array($ejecutar);
+    if (!$ejecutar) {
+        echo "hubo algun error";
+    } else {
+        echo"alright" . $usuar;
+    }
+    $reg = mysqli_fetch_array($ejecutar);
 
 
-if ($reg) {
-     header("location:interfaz_administrador_liga.php");
+    if ($reg) {
+        header("location:interfaz_administrador_liga.php");
+    } else {
+
+    }
     
-}else {
-    echo'<script type="text/javascript">
-    alert("¡El usuario o la contraseña no coinciden!");
-    window.location.href="ingresar.html";
-    </script>';
-}
+}else 
+if (isset($eliminar)) {
 
+    $sql1 = "delete from usuario where NombreUsuario='$usuar'";
+
+
+    $ejecutar1 = mysqli_query($conexion, $sql1) or die("problems:" . mysqli_error($conexion));
+
+    if (!$ejecutar1) {
+        echo "hubo algun error";
+    } else {
+        echo'<script type="text/javascript">
+    alert("¡Se elimino correctamente!");
+    window.location.href="ligas.php";
+    </script>';
+    }
+    
+}
 mysqli_close($conexion);

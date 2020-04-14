@@ -1,4 +1,4 @@
-        <?php
+ <?php
 $host = 'localhost';
 $user = "root";
 $password = '';
@@ -18,12 +18,12 @@ session_start();
 
  $id= filter_input(INPUT_POST, "id");
  
- $sql = "delete from solicitud_liga where id_solicitud_liga='$id'";
+ $sql = "delete from cancha where idCancha='$id'";
  $ejecutar = mysqli_query($conexion, $sql) or die("problems:" . mysqli_error($conexion));
  
-  if (!$ejecutar) {
+  if (!$ejecutar1) {
       echo"algo salio mal";
     } else {
         echo"alright";
-        header("location:solicitudes.php");
+        header("location:canchas.php");
     }

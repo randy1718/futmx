@@ -9,13 +9,15 @@
         
         $usuar= $_SESSION["usuario"];
 $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
+    $numero="select * from solicitud_liga";
     $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
-     if(!$ejecutar){
+    $ejecutar1= mysqli_query($conexion,$numero) or die ("problems:". mysqli_error($conexion));
+     if(!$ejecutar || !$ejecutar1){
          echo "ocurrio un error";
      }else{
 
      }
-     
+      $numero_solicitudes= mysqli_num_rows($ejecutar1);
       while($mostrar= mysqli_fetch_array($ejecutar)){  
         $imagen=$mostrar["foto"];
             
@@ -67,7 +69,9 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
 
                 <img class="im" src="imagenes/equipo.jpg"> 
                 <p class="txt">Solicitudes</p>
-
+                <?php if($numero_solicitudes>0){?>
+                <span class="numero" id="number"><div class="num"><?php echo"".$numero_solicitudes?></div></span>
+                <?php }?>
              </div>
             </a>
             

@@ -8,14 +8,16 @@
         session_start();
         
         $usuar= $_SESSION["usuario"];
-$consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
+    $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
+  
     $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
-     if(!$ejecutar){
+  
+     if(!$ejecutar ){
          echo "ocurrio un error";
      }else{
 
      }
-     
+    
       while($mostrar= mysqli_fetch_array($ejecutar)){  
         $imagen=$mostrar["foto"];
             
@@ -54,7 +56,7 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
             
             
             
-            <a href="ligas.html" name="Opcion" value="1" style="color:#000000" title="Canchas" onmouseover="window.status='Canchas';return true" onmouseout="window.status='';return true" >
+            <a href="canchas.php" name="Opcion" value="1" style="color:#000000" title="Canchas" onmouseover="window.status='Canchas';return true" onmouseout="window.status='';return true" >
              <div class="canchas">  
 
                  <img class="im" src="imagenes/canchas.jpg" > 
@@ -63,7 +65,7 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
              </div>
             </a> 
             
-             <a href="solicitudes.html" name="Opcion" value="1" style="color:#000000">
+             <a href="tabla_posiciones.html" name="Opcion" value="1" style="color:#000000">
              <div class="tabla_posiciones">  
 
                  <img class="im" src="imagenes/posiciones.png"> 
@@ -72,7 +74,7 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
              </div>
             </a>
             
-             <a href="crear_liga.html" name="Opcion" value="1" style="color:#000000">
+             <a href="partidos.html" name="Opcion" value="1" style="color:#000000">
              <div class="partidos">  
 
                  <img class="im" src="imagenes/vs.jfif"> 

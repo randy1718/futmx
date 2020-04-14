@@ -35,7 +35,7 @@ session_start();
         <div style="position: relative">
             
         <div class="rectangulo">
-            <a href="Start.html">
+            <a href="interfaz_administrador.php">
             <img class="logo" src="imagenes/logo.png">  
             </a> 
             <a class="ingreso" href="interfaz_administrador.php" name="Opcion" value="1" style="color:#000000"> Atrás</a>
@@ -44,13 +44,13 @@ session_start();
         <div class="cuadrado_ingreso">
             
                      
-            <form action="ingresarLiga.php" method="POST">
+            <form action="ingresarLiga.php" method="POST" name="ligas">
                 
                 
                 <select name="Liga" class="li">
 
                     <?php
-                    $consulta = "select NombreUsuario from usuario where idTipoUsuario='2'";
+                    $consulta = "select NombreUsuario, NombreLiga from usuario where idTipoUsuario='2'";
                     $ejecutar = mysqli_query($conexion, $consulta) or die("problems:" . mysqli_error($conexion));
 
                     if (!$ejecutar) {
@@ -72,15 +72,31 @@ session_start();
 
               
                 
-                <button type="submit"  class="entrar" name="subir">Entrar</button><br>
-              
+                <input type="submit"  class="entrar" name="Entrar" value="Entrar" /><br>
+                <input type="submit"  class="bo" onclick="return confirm('¿Estas seguro que quieres eliminar esta Liga?') " name="Eliminar" value="Eliminar"/><br>
+                
+               <script type="text/javascript">
+        function preguntar(){
+            var con=confirm('¿Estas seguro que quieres eliminar esta Liga?');
+            if(con!==true){
+                return false;
+            }else{
+               return true;
+            }
+            
+        }    
+        </script>
             </form>
+            
+                 
             
         </div>
             
             
                  
         </div>
+        
+       
         
         
 
