@@ -67,7 +67,7 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
              <a href="solicitudes.php" name="Opcion" value="1" style="color:#000000">
              <div class="solicitud_liga">  
 
-                <img class="im" src="imagenes/equipo.jpg"> 
+                 <img class="im" src="imagenes/Grupo 10.png"> 
                 <p class="txt">Solicitudes</p>
                 <?php if($numero_solicitudes>0){?>
                 <span class="numero" id="number"><div class="num"><?php echo"".$numero_solicitudes?></div></span>

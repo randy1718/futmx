@@ -74,7 +74,7 @@
             </div>
             
              <div id="slidebar">
-                 <a href="interfaz_administrador.php" onclick="window.open('cambiarFoto.html','popup','width=750,height=410, left=400,right=400, top=200')"> 
+                 <a href="cuenta_liga.php" onclick="window.open('cambiarFoto.html','popup','width=750,height=410, left=400,right=400, top=200')"> 
                  <div class="foto">
                    <?php
                 echo "<img  class='fp' src='data:".$mostrar["tipo_foto"].";base64,".base64_encode($imagen)."'>";

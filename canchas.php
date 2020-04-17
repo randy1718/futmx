@@ -48,6 +48,7 @@ session_start();
 
 
             <div class="box">
+                <div class="box_inf">
 
                 <?php
                 $usuar = $_SESSION["usuario"];
@@ -98,7 +99,7 @@ session_start();
                     }
                     function cerrar() {
                         document.getElementById('info').style.display = "none";
-                        document.getElementById('cap').classList.toggle('cap');
+                       document.getElementById('cap').classList.toggle('cap');
                     }
                     function cerrarForm() {
                         document.getElementById('crearCancha').style.display = "none";
@@ -135,59 +136,67 @@ session_start();
                     }
 
                 </script>
-
-                <button class="crear_cancha"  onclick="abrirCreacion()">
-                <img class="mas" src="imagenes/mas.png">
-            </button>
-            </div>
-
-            
-
-
-            <div id="cap">
-
-            </div>
-
-
-
-            <div class="infor" id="info">
-                <a href="javascript:cerrar()">
-                    <img src="imagenes/5a5798809538462e5a82d431.png" class="x">
-                </a>
-
-                <a href="canchas.php" onclick="window.open('cambiarFoto.html', 'popup', 'width=750,height=410, left=400,right=400, top=200')"> 
-                    <div class="fotoCancha" id="boton">
-                        <?php
-                        echo "<img  id='picture' class='canchaPicture'>";
-                        ?>
+                </div>
+                    <div class="boton_crear_cancha">
+                    <button class="crear_cancha"  onclick="abrirCreacion()">
+                        <img class="mas" src="imagenes/mas.png">
+                    </button>
                     </div>
-                </a>
+                        
+                       
+                    </div>
+                  
+                <div id="cap">
+                </div>
+                        
+     
 
-                <form action="editCancha.php" method="POST" name="canchas">
+                        <div class="infor" id="info">
+                        <a href="javascript:cerrar()">
+                            <img src="imagenes/5a5798809538462e5a82d431.png" class="x">
+                        </a>
 
-                    <input class="idCancha" type="text" id="id" name="idCancha"  required><br>
-                    <input class="nombreCancha" type="text" id="nombre" name="nombreCancha"  required><br>
-                    <input class="direccionCancha" type="text" id="direccion" name="direccionCancha"  required><br>      
+                        <a href="canchas.php" onclick="window.open('cambiarFoto.html', 'popup', 'width=750,height=410, left=400,right=400, top=200')"> 
+                            <div class="fotoCancha" id="boton">
+                                <?php
+                                echo "<img  id='picture' class='canchaPicture'>";
+                                ?>
+                            </div>
+                        </a>
 
-                    <button class="delete_cancha" onclick="return confirm('¿Estas seguro que quieres eliminar esta Liga?')">Eliminar Cancha</button>
+                        <form action="editCancha.php" method="POST" name="canchas">
 
-                </form>
+                            <input class="idCancha" type="text" id="id" name="idCancha"  placeholder="" required><br>
+                            <input class="nombreCancha" type="text" id="nombre" name="nombreCancha"  required><br>
+                            <input class="direccionCancha" type="text" id="direccion" name="direccionCancha"  required><br>      
+
+                            <button class="delete_cancha" onclick="return confirm('¿Estas seguro que quieres eliminar esta Liga?')">Eliminar Cancha</button>
+
+                        </form>
 
 
 
-            </div>
+                    </div>
 
 
 
 
 
-            <div id="crearCancha" class="form_cancha">
-                <a href="javascript:cerrarForm()">
-                    <img src="imagenes/5a5798809538462e5a82d431.png" class="x">
-                </a>
-                <form action="crearCancha.php" method="POST" name="canchas">
+                    <div id="crearCancha" class="form_cancha">
+                        <a href="javascript:cerrarForm()">
+                            <img src="imagenes/5a5798809538462e5a82d431.png" class="x">
+                        </a>
+                        <form action="crear_cancha.php" method="POST" name="canchas" enctype="multipart/form-data">
+                            
+                            <input class="NameCancha" type="text" id="nombreCancha" name="NombreCancha" placeholder="Nombre de la cancha" required><br>
+                            <input class="Capacidad" type="text" id="capacidad" name="CapacidadCancha" placeholder="Capacidad" required><br>
+                            <input class="Ubicacion" type="text" id="ubicacion" name="UbicacionCancha" placeholder="Ubicacion (Direccion)" required><br>
+                            <input class="Ciudad" type="text" id="ciudad" name="CiudadCancha" placeholder="Ciudad" required><br>
+                            <input type="file" class="PictureCancha"  name="fot_cancha"  required>
+                            
+                            <button class="agregarCancha" >Agregar Cancha</button>
 
-                </form>
-            </div>
-    </body>
-</html>
+                        </form>
+                    </div>
+                    </body>
+                    </html>

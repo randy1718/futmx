@@ -23,6 +23,8 @@ $imagen=$_FILES['fotografia'];
 if(!isset($imagen) || $_FILES['fotografia']['error']>0){
   echo "Ha ocurrido un error";  
 }else{
+   
+
 
 $permitidos=array("image/jpg","image/jpeg","image/gif","image/png");
     
@@ -48,8 +50,8 @@ $permitidos=array("image/jpg","image/jpeg","image/gif","image/png");
      }else{
          echo "el archivo se subio correctamente";
      }
-
 }
+
 /*
 $imagen = filter_input(INPUT_POST, "fileOutput");
         $target_path="imagenes/";
