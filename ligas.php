@@ -25,12 +25,12 @@ session_start();
         <title>FUTMX</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="ingresoLiga.css">
+        <link rel="stylesheet" type="text/css" href="ligas.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="icon" href="imagenes/balon.png">
         <script src="operaciones.js"></script>
     </head>
-    <body>
+    <body id="ligas">
         
         <div style="position: relative">
             
@@ -62,7 +62,7 @@ session_start();
                     while ($mostrar = mysqli_fetch_array($ejecutar)) {
                         ?>
                         <tr>
-                            <option><?php echo $mostrar['NombreUsuario'] ?></option>
+                            <option class="li"><?php echo $mostrar['NombreUsuario'] ?></option>
                         </tr>
                         <?php
                     }

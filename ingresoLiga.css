@@ -6,6 +6,13 @@ height: 593px;
 overflow-x: hidden;
 }
 
+#ligas{
+background:url("imagenes/minimalist.jpg");
+background-size:cover;
+height: 593px;
+overflow-x: hidden;  
+}
+
 .logo{
     width: 230px;
     height:60px;   
@@ -536,82 +543,103 @@ outline: none;
 
 .sol{
     position: absolute;
-   margin-left: 100px;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   text-align: center;
+    text-align: center;
     border-collapse: collapse;
-    width: 900px;
-    height: 80px;
-
+    width: 950px;
+    border-radius: 60px;
+    border:1px solid #828D8B;
     font-family: Tw Cen MT,serif;
-    font-size: 30px;
+    font-size: 23px;
     outline: none;
     overflow:auto;
+    -webkit-border-radius:6px;
+    border-spacing: 0px;
 }
 
-th,td{
-   padding: 2px; 
-}
+th,td,tr{
+   padding-left: 0px; 
+   padding-right: 0px; 
+   padding-bottom: 5px;
+   padding-top: 5px;
+   border:0.5px solid #D8D8D8;
+   overflow-x:auto; 
 
-tr td, th { 
-    border-top-right-radius: 10px;               
-    border-top-left-radius: 0; 
-    border-bottom-left-radius: 0; 
-    border-bottom-right-radius: 0; 
 }
-th:first-child { 
-    border-top-left-radius: 10px; 
-}
-th:last-child {   
-    border-top-right-radius: 10px; 
-}
-tr:last-child td:first-child { 
-    border-bottom-left-radius: 10px; 
-}
-tr:last-child td:last-child { 
-    border-bottom-right-radius: 10px; 
+tr:nth-child(even){
+    background-color: rgba(255,194,194,0.3);
 }
 
 
 thead{
-    background-color: #EFD9FF;
-     border-radius: 30px;
+    background-color: rgba(95,186,167,0.3);
     color:black;
+    padding:0px;
 }
 
 .eliminar{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     outline: none;
-    background-color: #FF0000;
-    border:0.5px solid #FF0000;
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+    border:0.5px solid rgba(118,214,188,0.2);
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.7);
     
 }
+
+.x{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: -14px;
+    margin-left: -15px;
+    
+}
+
 
 .eliminar:hover{
   box-shadow: 0px 3px 6px rgba(12,38,9,1);  
 }
 
 .tabla{
-    width: 1100px;
-    height: 590px;
+    width: 960px;
+    height: 333px;
     background-color: #fff;
+    margin-top: 50px;
+     margin-left: 120px;
+     margin-right: 120px;
+     align-content: center;
+     position: absolute;
+     overflow-y:auto;
+}
+
+::-webkit-scrollbar{
+    margin-top: 5px;
+    width: 10px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #5FBAA7; 
+}
+
+.espacio{
+     width: 1200px;
+     height: 590px;
+     background-color: #fff;
      margin-top: 50px;
-     margin-left: 169px;
+     margin-left: 135px;
      margin-right: 269px;
      border-radius: 43px;
      left:2%;
      align-content: center;
      position: absolute;
-     overflow:auto;
 }
 
-.tabla::-webkit-scrollbar{
-    display:none;
-}
+
 
 
 .bo{
@@ -657,4 +685,28 @@ option{
     border-radius: 20px;
     position: absolute;
     outline: none; 
+}
+
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.titulo{
+    margin-top: 470px;
+    margin-left: 415px;
+    position: absolute;
+    font-size:120px;
+    text-align: center;
+    font-family: Tw Cen MT,serif; 
+    padding:0px;
+    margin-bottom: 0px;
 }

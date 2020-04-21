@@ -23,27 +23,32 @@ session_start();
 $usuar = filter_input(INPUT_POST, "u");
 $contrasena = filter_input(INPUT_POST, "c");
 
-$_SESSION["usuario"] = $usuar;
 
-$sql = "select NombreUsuario, Contraseña from usuario where NombreUsuario='$usuar' and Contraseña='$contrasena' and idTipoUsuario='1'";
-$sql2 = "select NombreUsuario, Contraseña from usuario where NombreUsuario='$usuar' and Contraseña='$contrasena' and idTipoUsuario='2'";
 
-$ejecutar = mysqli_query($conexion, $sql) or die("problems:" . mysqli_error($conexion));
-$ejecutar2 = mysqli_query($conexion, $sql2) or die("problems:" . mysqli_error($conexion));
 
-if (!$ejecutar) {
-    echo "hubo algun error";
-} else {
-    echo"alright";
-}
-$reg = mysqli_fetch_array($ejecutar);
-$reg2 = mysqli_fetch_array($ejecutar2);
+$sql3 = "select NombreUsuario, Contraseña from usuario where NombreUsuario= ? and Contraseña= ? and idTipoUsuario='1'";
 
-if ($reg) {
+$sql2 = "select NombreUsuario, Contraseña from usuario where NombreUsuario=? and Contraseña=? and idTipoUsuario='2'";
+
+$sentencia= mysqli_prepare($conexion,$sql3) or die("problems:" . mysqli_error($conexion));
+mysqli_stmt_bind_param($sentencia,'ss', $usuar,$contrasena);
+mysqli_stmt_execute($sentencia);
+mysqli_stmt_store_result($sentencia);
+$reg = mysqli_stmt_num_rows($sentencia);
+
+$sentencia1= mysqli_prepare($conexion,$sql2) or die("problems:" . mysqli_error($conexion));
+mysqli_stmt_bind_param($sentencia1,'ss', $usuar,$contrasena);
+mysqli_stmt_execute($sentencia1);
+mysqli_stmt_store_result($sentencia1);
+$reg1 = mysqli_stmt_num_rows($sentencia1);
+
+if ($reg ==1) {
+    $_SESSION["usuario"] = $usuar;
     header("location:interfaz_administrador.php");
-} else if ($reg2) {
+} else if($reg1==1) {
+    $_SESSION["usuario"] = $usuar;
     header("location:interfaz_administrador_liga.php");
-}else {
+}else{
     echo'<script type="text/javascript">
     alert("¡El usuario o la contraseña no coinciden!");
     window.location.href="ingresar.html";

@@ -32,7 +32,7 @@ session_start();
         <script src="librerias/bootstrap/js/bootstrap.js"></script>
         <script src="librerias/alertifyjs/alertify.js"></script>
     </head>
-    <body>
+    <body id="ligas">
 
         <div style="position: relative">
 
@@ -44,7 +44,8 @@ session_start();
         </div>
 
         <br>
-        
+      
+        <div class="espacio"> 
         <div class="tabla">
             
         <table border="1" align="center" bgColor="FFFFFF" class="sol" id="solicitudes">
@@ -54,7 +55,7 @@ session_start();
                      <td>Nombre solicitante</td>
                      <td>Celular</td>
                      <td>Email</td>
-                     <td>Accion</td>
+                     <td>Eliminar</td>
                  </tr>
             </thead>
 
@@ -77,7 +78,9 @@ session_start();
                 <td><?php echo $mostrar['celular'] ?></td>
                 <td><?php echo $mostrar['email'] ?></td>
                 <td>
-                    <button class="eliminar" onclick="eliminar(<?php echo $mostrar['id_solicitud_liga'] ?>)"></button>
+                    <button class="eliminar" onclick="eliminar(<?php echo $mostrar['id_solicitud_liga'] ?>)">
+                        <img class="x" src="imagenes/x-emoji-png-5.png" >
+                    </button>
                      </td>
 
 
@@ -86,6 +89,11 @@ session_start();
         }
             ?>
             </table>
+        </div>
+        </div>
+        
+        <div class="titulo">
+            Solicitudes liga
         </div>
 
         <script type="text/javascript">
