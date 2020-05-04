@@ -97,6 +97,8 @@ session_start();
         </div>
 
         <script type="text/javascript">
+            
+           
         function eliminar(id){
             if(confirm('¿Estas seguro que quieres eliminar la cuenta?')){
             cadena="id="+id;
@@ -106,11 +108,11 @@ session_start();
                url:"eliminarSolicitud.php",
                data:cadena,
                success:function(r){
-                   if(r===1){
-                       alert("¡No se borro correctamente!");
+                   if(r==="1"){
+                       alert("¡No se borro correctamente!"+r);
                    window.location.href="solicitudes.php";
                }else{
-                   alert("¡Se borro correctamente!");
+                   alert("¡Se borro correctamente!"+r);
                    window.location.href="solicitudes.php";
                }
                    }

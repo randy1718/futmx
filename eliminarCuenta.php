@@ -16,9 +16,9 @@ if (!$conexion) {
 
 session_start();
 
- $id= filter_input(INPUT_POST, "id");
+ $us=$_SESSION["usuario"];
  
- $sql = "delete from solicitud_liga where id_solicitud_liga='$id'";
+ $sql = "delete from usuario where NombreUsuario='$us'";
  $ejecutar = mysqli_query($conexion, $sql) or die("problems:" . mysqli_error($conexion));
  
   if (!$ejecutar) {

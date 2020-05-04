@@ -19,6 +19,7 @@ if (!$conexion) {
 session_start();
 
 
+
 $usuar = filter_input(INPUT_POST, 'Liga');
 $entrar=filter_input(INPUT_POST, 'Entrar');
 $eliminar=filter_input(INPUT_POST, 'Eliminar');
@@ -26,7 +27,14 @@ $eliminar=filter_input(INPUT_POST, 'Eliminar');
 $_SESSION["usuario"] = $usuar;
 
 if (isset($entrar)) {
-
+    if($usuar==="a"){
+        echo'<script type="text/javascript">
+    alert("¡Seleccione una liga!");
+    window.location.href="ligas.php";
+    </script>';
+    }
+    
+    
     $sql = "select NombreUsuario from usuario where NombreUsuario='$usuar' and idTipoUsuario='2'";
 
 
@@ -41,7 +49,7 @@ if (isset($entrar)) {
 
 
     if ($reg) {
-        header("location:interfaz_administrador_liga.php");
+        header("location:inter_admin_liga.php");
     } else {
 
     }
@@ -50,6 +58,7 @@ if (isset($entrar)) {
 if (isset($eliminar)) {
 
     $sql1 = "delete from usuario where NombreUsuario='$usuar'";
+    
 
 
     $ejecutar1 = mysqli_query($conexion, $sql1) or die("problems:" . mysqli_error($conexion));

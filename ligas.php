@@ -43,14 +43,17 @@ session_start();
            
         <div class="cuadrado_ingreso">
             
+            <div class="league">
+                Ligas
+            </div>
+            
                      
             <form action="ingresarLiga.php" method="POST" name="ligas">
                 
-                
                 <select name="Liga" class="li">
-
+                       <option class="li" value="a">- Seleccione una liga -</option>
                     <?php
-                    $consulta = "select NombreUsuario, NombreLiga from usuario where idTipoUsuario='2'";
+                    $consulta = "select NombreUsuario, Nombre from usuario inner join liga on administrador=documento_identidad where idTipoUsuario='2'";
                     $ejecutar = mysqli_query($conexion, $consulta) or die("problems:" . mysqli_error($conexion));
 
                     if (!$ejecutar) {
@@ -62,7 +65,7 @@ session_start();
                     while ($mostrar = mysqli_fetch_array($ejecutar)) {
                         ?>
                         <tr>
-                            <option class="li"><?php echo $mostrar['NombreUsuario'] ?></option>
+                            <option class="li" value="<?php echo $mostrar['NombreUsuario'] ?>"><?php echo $mostrar['NombreUsuario'] ?>-<?php echo $mostrar['Nombre'] ?></option>
                         </tr>
                         <?php
                     }

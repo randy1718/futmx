@@ -75,10 +75,10 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
              </div>
             </a>
             
-             <a href="crear_liga.html" name="Opcion" value="1" style="color:#000000">
+             <a href="crear_liga.php" name="Opcion" value="1" style="color:#000000">
              <div class="creacion_liga">  
 
-                <img class="im" src="imagenes/equipo.jpg"> 
+                 <img class="im" src="imagenes/b7dc8df21a11b92db73655ec928c042f.jpg"> 
                 <p class="txt">Crear liga</p>
 
              </div>
@@ -96,8 +96,9 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
                 </div>
                  </a>
 
+                 <a href="interfaz_administrador.php" class="begin" name="Opcion" value="1" >Inicio</a>
+                 <a href="cuenta.php" class="editar" name="Opcion" value="1" >Cuenta</a>
                  
-                <a href="cuenta.php" class="editar" name="Opcion" value="1" >Editar Cuenta</a> 
                 <a href="Start.html" class="salir" name="Opcion" value="1" >Salir</a>  
             </div>
             

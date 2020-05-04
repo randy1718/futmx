@@ -213,25 +213,7 @@ h1{
 
 
 
-.entrar{
-    border-radius:31px;	
-    margin-bottom:20px;
-    margin-right:139px;
-    margin-left:139px;
-    margin-top: 340px;
-    width:422px;
-    padding:14px;
-    border: 1px solid #000;
-    position:absolute;
-    outline: none;
-    background:#000;
-    color:#FFF;
-    font-size:25px;
-    text-align: center;
-    font-family: Tw Cen MT,serif;
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
 
-}
 
 .usuario{
     border-radius:31px;	
@@ -301,18 +283,13 @@ textarea{
 }
 
 
-input:focus, button:focus textarea:focus{
+ textarea:focus{
     border-radius:31px;
     border:1px solid #000;
     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
 }
 
-button[type="submit"]:hover{
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
-    background-color: #FFF;
-    color:#000;
-    cursor:pointer;
-}
+
 
 
 .linea
@@ -533,12 +510,17 @@ button[type="submit"]:hover{
 .li{
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 200px;
+    margin-top: 220px;
     width: 500px;
-    height: 50px;
+    height: 80px;
     border-radius: 20px;
     position: absolute;
     outline: none;
+    font-size: 25px;
+    background-color: #dbfdff;
+    color:#683c25;
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+
 }
 
 .sol{
@@ -620,20 +602,44 @@ thead{
     display:none;
 }
 
-
-.bo{
-    border-radius:31px;	
+.entrar{
+    	
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
     margin-bottom:20px;
     margin-right:139px;
-    margin-left:139px;
-    margin-top: 400px;
-    width:422px;
+    margin-left:200px;
+    margin-top: 360px;
+    width:300px;
+    height:70px;
     padding:14px;
-    border: 1px solid #FF0000;
+    border: 1px solid #000;
     position:absolute;
     outline: none;
-    background:#FF0000;
+    background:#000;
     color:#FFF;
+    font-size:25px;
+    text-align: center;
+    font-family: Tw Cen MT,serif;
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+
+}
+
+.bo{
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;	
+    margin-bottom:20px;
+    margin-right:139px;
+    margin-left:200px;
+    margin-top: 410px;
+    width:300px;
+    height:70px;
+    padding:14px;
+    border: 0px solid #FF0000;
+    position:absolute;
+    outline: none;
+    background-color: #05b6a7;
+    color:#000;
     font-size:25px;
     text-align: center;
     font-family: Tw Cen MT,serif;
@@ -681,9 +687,9 @@ option{
 
 .create_liga{
     position:absolute;
-    width:700px;
-    height:600px;
-    margin-left: 800px;
+    width:800px;
+    height:650px;
+    margin-left: 700px;
     margin-top:30px;
     background-color:#fff;
     border-radius:31px;
@@ -692,60 +698,60 @@ option{
 
 .titulo_form{
     position:absolute;
-    width:750px;
+    width:600px;
     height:170px;
-    margin-left: 10px;
-    margin-top:250px;
+    margin-left: 40px;
+    margin-top:280px;
     background-color:rgba(255, 255, 255, 0.7);
     border-radius:31px;
     box-shadow: 0px 3px 6px rgba(12,38,9,0.5); 
-    font-size:120px;
+    font-size:100px;
     text-align: center;
     font-family: Tw Cen MT,serif;
 }
 .cr{
     position:absolute;
-    margin-top:20px;
-    margin-left: 55px;
+    margin-top:30px;
+    margin-left: 30px;
     text-align: center;
 }
 
 .z{
-    width: 400px;
+    width: 320px;
     height: 50px;
     border:1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 31px;
-    margin-top: 20px;
-    margin-left: 149px;
-    margin-right: 149px;
+    border-radius: 15px;
+    margin-top: 30px;
     outline: none; 
     margin-bottom: 10px;
     box-shadow: 0px 3px 6px rgba(12,38,9,0.1);
-    background-color: #c1f8de;
+    background-color: #eff1b3;
 }
 
 .z:focus{
     border:1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
 
 .z::-webkit-input-placeholder{
     font-family: Tw Cen MT,serif;
-    font-size: 25px;
-    margin-top: 15px;
+    font-size: 21px;
+    margin-top: 30px;
     text-align: center;
+    color: #614262;
     
 
 }
 
 .m{
-    width: 400px;
-    height: 50px;
+    width: 700px;
+    height: 70px;
     border:1px solid #000;
-    border-radius: 31px;
-    margin-top: 500px;
+    border-radius: 10px;
+    margin-top: 550px;
     margin-bottom: 10px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-family: Tw Cen MT,serif;
     font-size: 25px;
     background-color: rgba(0, 0, 0, 1);
@@ -760,12 +766,20 @@ option{
     background-color: #FFF;
     color:#000;
     cursor:pointer;
+    border-radius: 10px;
 }
 
 .entradas{
     position:absolute;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
     
+}
+
+.entradas_2{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 430px;
 }
 
 .esquina{
@@ -780,3 +794,67 @@ option{
     position:absolute;
     margin-left: 1330px;
 }
+.lab{
+    position: absolute;
+    color:#000;
+    margin-left: 1px;
+    margin-top: 5px;
+     font-size: 21px;
+    font-family: Tw Cen MT,serif;
+}
+
+date{
+    position: absolute;
+}
+
+.zz{
+    width: 320px;
+    height: 50px;
+    border:1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin-top: 30px;
+    outline: none; 
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.1);
+    background-color: #c1f8de;
+    position: absolute;
+}
+
+.zz:focus{
+    border:1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.zz::-webkit-input-placeholder{
+    font-family: Tw Cen MT,serif;
+    font-size: 21px;
+    margin-top: 30px;
+    text-align: center;
+    
+
+}
+
+.doc{
+    font-family: Tw Cen MT,serif;
+    font-size: 21px;
+    padding:5px;
+    color: #614262;
+}
+
+select{
+    font-family: Tw Cen MT,serif;
+    font-size: 21px;
+    padding:5px;
+    color: #614262;
+}
+
+.league{
+   font-family: Tw Cen MT,serif;
+   font-size: 150px; 
+   position: absolute;
+   margin-top: 10px;
+   margin-left: 200px;
+   color:#073d9d;
+   text-shadow: 0px 3px 4px #E79747;
+}
+

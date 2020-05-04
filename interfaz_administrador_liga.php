@@ -7,9 +7,8 @@
         $conexion= mysqli_connect($host, $user, $password, $database) or die("problemas de conexion");
         session_start();
         
-        $usuar= $_SESSION["usuario"];
-    $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
-  
+    $usuar= $_SESSION["usuario"];
+    $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";    
     $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
   
      if(!$ejecutar ){
@@ -35,7 +34,7 @@
         <script src="deslizar.js"></script>
         <script src="capa.js"></script>
     </head>
-    <body>
+    <body class="admin_liga">
         <div style="position: relative">
             <div class="ad_liga">
               <div class="saludo">Hola de nuevo, <?php echo $_SESSION["usuario"] ?> !</div>  
@@ -55,7 +54,9 @@
         </div>
             
             
-            
+            <div class="opciones">
+            </div>
+                
             <a href="canchas.php" name="Opcion" value="1" style="color:#000000" title="Canchas" onmouseover="window.status='Canchas';return true" onmouseout="window.status='';return true" >
              <div class="canchas">  
 
@@ -68,29 +69,31 @@
              <a href="tabla_posiciones.html" name="Opcion" value="1" style="color:#000000">
              <div class="tabla_posiciones">  
 
-                 <img class="im" src="imagenes/posiciones.png"> 
+                 <img class="im" src="imagenes/01.jpg"> 
                 <p class="txt3">Posiciones</p>
 
              </div>
             </a>
             
-             <a href="partidos.html" name="Opcion" value="1" style="color:#000000">
+             <a href="partidos.php" name="Opcion" value="1" style="color:#000000">
              <div class="partidos">  
-
-                 <img class="im" src="imagenes/vs.jfif"> 
+                 <div class="ima_dad">
+                 <img class="ima" src="imagenes/img_410939.png"> 
+                 </div>
                 <p class="txt4">Partidos</p>
 
              </div>
             </a>
             
-            <a href="equipos.html" name="Opcion" value="1" style="color:#000000">
+            <a href="equipos.php" name="Opcion" value="1" style="color:#000000">
              <div class="equipos">  
 
-                 <img class="im" src="imagenes/vs.jfif"> 
+                 <img class="im" src="imagenes/group.jpg"> 
                 <p class="txt5">Equipos</p>
 
              </div>
             </a>
+            
             
             
             
@@ -118,5 +121,7 @@
             ?>
             
         </div>
+        
+      
     </body>
 </html>
