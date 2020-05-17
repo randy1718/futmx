@@ -149,7 +149,7 @@ while ($mostrar = mysqli_fetch_array($ejecutar)) {
                     </a>
 
                     <a href="interfaz_administrador.php" class="begin" name="Opcion" value="1" >Inicio</a>
-                    <a href="cuenta.php" class="editar" name="Opcion" value="1" >Editar Cuenta</a> 
+                    <a href="cuenta.php" class="editar" name="Opcion" value="1" >Cuenta</a> 
                     <a href="Start.html" class="salir" name="Opcion" value="1" >Salir</a>  
                 </div>
                 <?php

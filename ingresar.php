@@ -7,6 +7,7 @@ $password = '';
 $database = 'futmx';
 $conexion = mysqli_connect($host, $user, $password, $database) or die("problemas de conexion");
 
+
 if (!$conexion) {
     echo"No se pudo conectar con el servidor";
 } else {

@@ -7,6 +7,13 @@
 
 }
 
+.central{
+    background: url("imagenes/minimalist.jpg");
+    background-size:cover;
+    height: 593px;
+    overflow-x: hidden; 
+}
+
 .cuenta_liga{
     background: url("imagenes/Abstracto_minimalista-Vector_Art_Design_HD_WallpaperPapel pintado_1920x1200[10wallpaper.com].jpg");
     background-size:cover;
@@ -60,7 +67,7 @@
 }
 
 .linea_izquierda{
-    background-color: #FF0000; 
+    background-color:  #FF0000; 
     border-radius: 10px;
     height: 15px;
     width: 200px;
@@ -697,11 +704,11 @@ input:focus, button:focus textarea:focus{
 
 .salir{
     position: absolute;
-    margin-top: 500px;
+    margin-top: 530px;
     width: 100px;
     margin-left: 125px;
     margin-right: 125px;
-    background-color: #5FBAA7;
+    background-color: #fd7f65;
     padding: 10px 25px;
     text-align: center; 
     text-decoration: none;
@@ -723,7 +730,7 @@ input:focus, button:focus textarea:focus{
     margin-left:-10px;
     margin-top: 51px;
     width: 1610px;
-    height: 703px;
+    height: 753px;
 
     background: rgba(0,0,0,0.5);
 }
@@ -734,7 +741,7 @@ input:focus, button:focus textarea:focus{
     margin-left:-10px;
     margin-top: 1px;
     width: 1610px;
-    height: 750px;
+    height: 785px;
 
     background: rgba(0,0,0,0.5);
 }
@@ -798,9 +805,9 @@ input:focus, button:focus textarea:focus{
 
 .editar{
     position: absolute;
-    margin-top: 300px;
+    margin-top: 350px;
     width: 240px;
-    height: 40px;
+    height: 30px;
     margin-left: 80px;
     margin-right: 75px;
     background-color: #5FBAA7;
@@ -817,9 +824,9 @@ input:focus, button:focus textarea:focus{
 }
 .begin{
     position: absolute;
-    margin-top: 400px;
+    margin-top: 440px;
     width: 240px;
-    height: 40px;
+    height: 30px;
     margin-left: 80px;
     margin-right: 75px;
     background-color: #5FBAA7;
@@ -965,4 +972,35 @@ input:focus, button:focus textarea:focus{
 .password_change:hover{
     background:#ace7fa;
     box-shadow: 0px 3px 6px rgba(12,38,9,0.9);
+}
+
+.recuadro{
+    background-color:   rgba(154,234,213,0.4);
+    position: absolute;
+    width: 1200px;
+    height: 340px;
+    border-radius: 50px;
+    margin-top: 270px;
+    margin-left: 150px;
+    
+}
+
+.subliga{
+    position: absolute;
+    margin-top: 260px;
+    width: 240px;
+    height: 30px;
+    margin-left: 80px;
+    margin-right: 75px;
+    background-color: #5FBAA7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font:30px normal normal uppercase;
+    font-family: Tw Cen MT,serif;
+    border-radius: 25px;
+    color:black;
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
 }

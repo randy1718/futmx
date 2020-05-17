@@ -24,7 +24,7 @@ body{
 
 .logo{
     width: 230px;
-    height:60px;
+    height:60px;   
 }
 .balon{
     left:40%;
@@ -50,7 +50,7 @@ body{
 
 .b{
     width: 300px;
-    height: 300px;
+    height: 300px; 
 }
 
 .rectangulo{
@@ -67,8 +67,22 @@ body{
 
 }
 
+.rectangulo_sol{
+    width: 1533px;
+    height: 60px;
+    background-color: #fff;
+    margin-top: -150px;
+    margin-left: -8px;
+    margin-right: 0px;
+    border:0px solid;
+    border-color: #707070;
+    position: absolute;
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+
+}
+
 .linea_izquierda{
-    background-color: #FF0000;
+    background-color: #FF0000; 
     border-radius: 10px;
     height: 15px;
     width: 200px;
@@ -78,7 +92,7 @@ body{
 }
 
 .linea_derecha{
-    background-color: #FF0000;
+    background-color: #FF0000; 
     border-radius: 10px;
     height: 15px;
     width: 200px;
@@ -97,7 +111,7 @@ body{
     border-top-left-radius: 43px;
     border-top-right-radius: 43px;
     align-content: center;
-    position: absolute;
+    position: absolute;   
 }
 
 .cuadrado_completo{
@@ -111,7 +125,7 @@ body{
     border-radius: 43px;
     left:2%;
     align-content: center;
-    position: absolute;
+    position: absolute;   
 }
 
 .cuadrado_ingreso{
@@ -124,7 +138,7 @@ body{
     border-radius: 43px;
     left:2%;
     align-content: center;
-    position: absolute;
+    position: absolute;   
 }
 
 .cuadrado_solicitud{
@@ -136,7 +150,7 @@ body{
     margin-right: 201.2px;
     border-radius: 43px;
     align-content: center;
-    position: absolute;
+    position: absolute;   
 }
 
 .candado{
@@ -149,8 +163,8 @@ body{
 }
 
 .rojo{
-    background-color:red;
-    position: absolute;
+    background-color:red; 
+    position: absolute;  
     margin-left: 385px;
     margin-right: 245px;
     width: 70px;
@@ -166,7 +180,7 @@ body{
     width: 70px;
     height:550px;
     opacity: 0.5;
-    position: absolute;
+    position: absolute;  
     border: 0px solid;
 }
 
@@ -224,7 +238,7 @@ h1{
 
 
 .entrar{
-    border-radius:31px;
+    border-radius:31px;	
     margin-bottom:20px;
     margin-right:139px;
     margin-left:139px;
@@ -243,7 +257,7 @@ h1{
 }
 
 .usuario{
-    border-radius:31px;
+    border-radius:31px;	
     margin-bottom:20px;
     margin-right:139px;
     margin-left:139px;
@@ -259,7 +273,7 @@ h1{
 
 }
 .password{
-    border-radius:31px;
+    border-radius:31px;	
     margin-bottom:20px;
     margin-right:139px;
     margin-left:139px;
@@ -280,18 +294,18 @@ h1{
 }
 
 .recuperar{
-    margin-bottom:20px;
+    margin-bottom:20px; 
     margin-top: 240px;
     margin-left: 145px;
     height: 20px;
-    border-radius:25px;
-    text-align: center;
+    border-radius:25px;	
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
     font:20px normal normal uppercase;
     font-family: Tw Cen MT,serif;
 
-    position: absolute;
+    position: absolute; 
 }
 
 
@@ -299,13 +313,13 @@ textarea{
     resize:vertical;
     max-height:300px;
     min-height:100px;
-    border-radius:15px;
+    border-radius:15px;	
     margin-bottom:20px;
     margin-right:20px;
     margin-left:10px;
     width:90%;
     padding:10px;
-    border: 1px solid #9B5700;
+    border: 1px solid #9B5700;	
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
@@ -336,18 +350,18 @@ textarea{
 }
 
 .c {
-    margin-bottom:20px;
+    margin-bottom:20px; 
     margin-right:430px;
     margin-top: 50px;
     margin-left:430px;
     width:200px;
-    border-radius:25px;
+    border-radius:25px;	
     background-color: #fff;
     border-style: solid;
     border-color: #0A6316;
     border-width: 1px;
     padding: 14px 25px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
     font:34px normal normal uppercase;
@@ -358,16 +372,16 @@ textarea{
 }
 
 .ingreso {
-    margin-bottom:20px;
+    margin-bottom:20px; 
     margin-top: 8px;
     margin-left:1140px;
     width:90px;
     height: 20px;
-    border-radius:25px;
+    border-radius:25px;	
     background-color: #fff;
 
     padding: 10px 25px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
     font:20px normal normal uppercase;
@@ -378,18 +392,18 @@ textarea{
 }
 
 .solicitud {
-    margin-bottom:20px;
+    margin-bottom:20px; 
     margin-top: 8px;
     margin-left:700px;
     width:320px;
     height: 20px;
-    border-radius:25px;
+    border-radius:25px;	
     background-color: #fff;
     border-style: solid;
     border-color: #0A6316;
     border-width: 1px;
     padding: 10px 25px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
     font:20px normal normal uppercase;
@@ -402,7 +416,7 @@ textarea{
     background-color: #96F59D;
     color: white;
     padding: 14px 25px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
 }
@@ -415,7 +429,7 @@ textarea{
     background-color: #96F59D;
     color: white;
     padding: 10px 25px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
 }
@@ -503,7 +517,7 @@ textarea{
     margin-top: 200px;
     font:60px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    text-align: center;
+    text-align: center; 
 }
 
 .txt1{
@@ -513,7 +527,7 @@ textarea{
     margin-top: 200px;
     font:60px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    text-align: center;
+    text-align: center; 
 }
 
 .saludo{
@@ -522,8 +536,8 @@ textarea{
     margin-right:150px;
     position: absolute;
     font:100px normal normal uppercase;
-    font-family: Tw Cen MT,serif;
-    text-align: center;
+    font-family: Tw Cen MT,serif; 
+    text-align: center; 
     font-weight: bold;
     color:  #52fabd;
     text-shadow: 6px 2px 8px  rgba(77,57,2,1);
@@ -566,7 +580,7 @@ textarea{
     margin-right: 125px;
     background-color: #fd7f65;
     padding: 10px 25px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
     font:20px normal normal uppercase;
@@ -596,7 +610,7 @@ textarea{
     margin-left:-10px;
     margin-top: 51px;
     width: 1610px;
-    height: 92.5vh;
+    height: 100vh;
 
     background: rgba(0,0,0,0.5);
 }
@@ -606,8 +620,7 @@ textarea{
     width: 1000px;
     height:280px;
     margin-top: 100px;
-    margin-left: 259.8px;
-    margin-right: 259.8px;
+    margin-left: 270px;
     border-radius: 31px;
     background-color: rgba(183,199,185,0.4);
 }
@@ -621,7 +634,7 @@ textarea{
     background-color: #5FBAA7;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
     font:30px normal normal uppercase;
@@ -641,7 +654,7 @@ textarea{
     background-color: #5FBAA7;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
     font:30px normal normal uppercase;
@@ -736,7 +749,7 @@ textarea{
     margin-top: 200px;
     font:60px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    text-align: center;
+    text-align: center; 
 }
 
 .txt3{
@@ -746,7 +759,7 @@ textarea{
     margin-top: 200px;
     font:60px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    text-align: center;
+    text-align: center; 
 }
 
 .txt4{
@@ -756,7 +769,7 @@ textarea{
     margin-top: 200px;
     font:60px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    text-align: center;
+    text-align: center; 
 }
 
 .txt5{
@@ -766,7 +779,7 @@ textarea{
     margin-top: 200px;
     font:60px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    text-align: center;
+    text-align: center; 
 }
 
 .txt6{
@@ -776,7 +789,7 @@ textarea{
     margin-top: 200px;
     font:60px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    text-align: center;
+    text-align: center; 
 }
 
 .editar{
@@ -789,7 +802,7 @@ textarea{
     background-color: #5FBAA7;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     display: inline-block;
     font:30px normal normal uppercase;
@@ -865,27 +878,24 @@ textarea{
     border-radius: 31px;
     margin-bottom: 50px;
     position: absolute;
-    overflow-y: auto;
+    overflow-y: auto;  
 }
 
 
 ::-webkit-scrollbar{
-    width: 4px;
-    height: 4px;
-    background:#fff;
-    display: none;
+    margin-top: 10px;
+    margin-left: -5px;
+    width: 10px;
+     border-radius: 10px;
+    background-color: #F5F5F5;
 }
-
-::-webkit-scrollbar-thumb{
-    background:#000;
-    border-radius: 4px;
-
-}
-
 ::-webkit-scrollbar-track{
-    display: none;
-    background:#fff;
-    border-radius: 4px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #5FBAA7; 
 }
 
 .can{
@@ -909,7 +919,7 @@ textarea{
     box-shadow: 0px 3px 6px rgba(12,38,9,1);
 }
 
-.boton_crear_cancha{
+.boton_crear_cancha{ 
     position: absolute;
     margin-top: 430px;
     margin-left: 700px;
@@ -963,16 +973,16 @@ textarea{
 }
 
 .box_cancha{
-    text-align: center;
+    text-align: center; 
 }
 .infor{
-    position: absolute;
+    position: absolute; 
     width: 800px;
     height: 520px;
     background-color:rgba(168,255,214,1) ;
     border-radius: 31px;
     margin-left: 350px;
-    margin-top: -570px;
+    margin-top: 170px;
     display: none;
 
 }
@@ -983,7 +993,7 @@ textarea{
     margin-top: -637px;
     margin-left: -20px;
     width: 1610px;
-    height: 730px;
+    height: 700px;
     cursor:pointer;
     background: rgba(0,0,0,0.5);
 }
@@ -1000,7 +1010,7 @@ textarea{
 
 
 .form_cancha{
-    position: absolute;
+    position: absolute; 
     width: 800px;
     height: 520px;
     background-color:rgba(168,255,214,1) ;
@@ -1011,7 +1021,7 @@ textarea{
 }
 
 .delete_cancha{
-    position:absolute;
+    position:absolute; 
     margin-top: 360px;
     margin-left: 420px;
     width: 350px;
@@ -1031,7 +1041,7 @@ textarea{
 }
 
 .update_cancha{
-    position:absolute;
+    position:absolute; 
     margin-top: 300px;
     margin-left:420px;
     width: 350px;
@@ -1056,7 +1066,7 @@ textarea{
 }
 
 .nombreCancha{
-    border-radius:15px;
+    border-radius:15px;	
     margin-bottom:20px;
     margin-right:139px;
     margin-left:40px;
@@ -1082,7 +1092,7 @@ textarea{
 }
 
 .direccionCancha{
-    border-radius:15px;
+    border-radius:15px;	
     margin-bottom:20px;
     margin-right:139px;
     margin-left:40px;
@@ -1106,7 +1116,7 @@ textarea{
     font-family: Tw Cen MT,serif;
 }
 .CiudadCancha{
-    border-radius:15px;
+    border-radius:15px;	
     margin-bottom:20px;
     margin-right:139px;
     margin-left:40px;
@@ -1130,7 +1140,7 @@ textarea{
     font-family: Tw Cen MT,serif;
 }
 .capacidadCancha{
-    border-radius:15px;
+    border-radius:15px;	
     margin-bottom:20px;
     margin-right:139px;
     margin-left:40px;
@@ -1174,7 +1184,7 @@ textarea{
 
 
 .NameCancha{
-    border-radius:20px;
+    border-radius:20px;	
     margin-bottom:20px;
     margin-right:139px;
     margin-left:180px;
@@ -1191,7 +1201,7 @@ textarea{
 }
 
 .Capacidad{
-    border-radius:20px;
+    border-radius:20px;	
     margin-bottom:20px;
     margin-right:139px;
     margin-left:180px;
@@ -1208,7 +1218,7 @@ textarea{
 }
 
 .Ubicacion{
-    border-radius:20px;
+    border-radius:20px;	
     margin-bottom:20px;
     margin-right:139px;
     margin-left:180px;
@@ -1225,7 +1235,7 @@ textarea{
 }
 
 .Ciudad{
-    border-radius:20px;
+    border-radius:20px;	
     margin-bottom:20px;
     margin-right:139px;
     margin-left:180px;
@@ -1244,7 +1254,7 @@ textarea{
 
 
 .agregarCancha{
-    position:absolute;
+    position:absolute; 
     margin-top: 375px;
     margin-left: 595px;
     width: 180px;
@@ -1270,7 +1280,7 @@ textarea{
 }
 
 .lbel{
-    position: absolute;
+     position: absolute;
     margin-top: 310px;
     margin-left: 180px;
     color:#000;
@@ -1347,24 +1357,189 @@ textarea{
 
 }
 
-.boton_reingreso{
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 340px;
-    width: 380px;
-    height: 40px;
-    background-color: #004cff;
+.contenedor{
+    position: relative;
+    background-color: #fff;
     border: 0px solid;
-    border-radius:10px;
-    font:30px normal normal uppercase;
-    font-family: Tw Cen MT,serif;
-    color: #fff;
-    font-weight: bold;
-    outline: none;
+    border-radius: 10px;
+    width: 1200px;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 159.6px;
+    margin-right: 159.6px;
     box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
 }
 
-.boton_reingreso:hover{
-    box-shadow: 0px 3px 6px rgba(12,38,9,1);
-    background-color: #004cff;
+.sol_equipo{
+    position: absolute;
+    text-align: center;
+    border-collapse: collapse;
+    width: 950px;
+    border-radius: 60px;
+    border:1px solid #828D8B;
+    font-family: Tw Cen MT,serif;
+    font-size: 23px;
+    outline: none;
+    overflow:auto;
+    -webkit-border-radius:6px;
+    border-spacing: 0px;
 }
+
+.tabla{
+    width: 960px;
+    height: 333px;
+    margin-top: 50px;
+     margin-left: 120px;
+     margin-right: 120px;
+     align-content: center;
+     position: absolute;
+     overflow-y:auto;
+}
+
+th,td,tr{
+   padding-left: 5px; 
+   padding-right: 5px; 
+   padding-bottom: 5px;
+   padding-top: 5px;
+   border:0.5px solid #D8D8D8;
+   overflow-x:auto; 
+
+}
+tr:nth-child(even){
+    background-color: rgba(255,194,194,0.3);
+}
+
+
+thead{
+    background-color: rgba(95,186,167,0.3);
+    color:black;
+    padding:0px;
+}
+
+.eliminar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    outline: none;
+    background-color: #f47263;
+    border:0.5px solid rgba(118,214,188,0.2);
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.3);
+    
+}
+
+.eliminar:hover{
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.7);
+}
+
+.x{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: -14px;
+    margin-left: -15px;
+    
+}
+
+.agregarEquipo{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    outline: none;
+    background-color:  #57d288;
+    border:0.5px solid rgba(118,214,188,0.2);
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.3);
+}
+
+.agregarEquipo:hover{
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.7);
+}
+
+.recuadro{
+    position: absolute;
+    background-color: #fff;
+    border: 0px solid;
+    border-radius: 10px;
+    width: 505px;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 245px;
+    margin-right: 159.6px;
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+}
+
+.equipo_t{
+      position: absolute;
+      width: 550px;
+      height: 180px;
+      margin-top: 150px;
+      margin-left: 800px;
+      color: #2b54cb;
+      background-color:   rgba(255,240,230,0.7);
+      border: 0px solid;
+      border-radius: 10px;
+      font-family: Tw Cen MT,serif;
+      font-size: 140px;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 0px 3px 6px rgba(255,151,38,0.9);
+}
+
+.groups{
+    width: 505.5px;
+    height: 500px;
+    background-color:#fff;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    position: absolute;
+    overflow-y: auto; 
+}
+
+.balls{
+    width: 200px;
+    height: 200px;
+    background-color: #FFF;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    outline: none;
+    margin-top: 30px;
+    margin-left: 150px;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+    cursor:pointer;
+    margin-bottom: 15px;
+    float: next;
+
+}
+
+.balls:hover{
+    box-shadow: 0px 3px 6px rgba(12,38,9,1);
+}
+
+.n_equipo{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: -45px;
+    width: 290px;
+    height: auto;
+    border: 0px solid;
+    border-radius: 10px;
+    background-color:   rgba(82,250,219,0.9);
+    font:40px normal normal uppercase;
+    font-family: Tw Cen MT,serif;
+    text-align: center;
+}
+
+.box_equipo{
+    text-align: center; 
+}
+
+.img_equipo{
+    width:200px;
+    height:200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 50%;
+    position: absolute;
+
+}
+

@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <?php
         $host='localhost';
         $user="root";
@@ -8,7 +8,7 @@
         session_start();
         
     $usuar= $_SESSION["usuario"];
-    $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";    
+    $consulta="select foto,tipo_foto, nombreSubliga from subliga inner join usuario on administrador=idUsuario where NombreUsuario='$usuar'";    
     $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
   
      if(!$ejecutar ){
@@ -19,11 +19,11 @@
     
       while($mostrar= mysqli_fetch_array($ejecutar)){  
         $imagen=$mostrar["foto"];
+        $nombreLiga=$mostrar["nombreSubliga"];
             
             $im=base64_decode($imagen);
         
 ?>
-<!DOCTYPE html>
 <html>
     <head>
         <title>FUTMX</title>
@@ -38,7 +38,7 @@
     <body class="admin_liga">
         <div style="position: relative">
             <div class="ad_liga">
-              <div class="saludo">Hola de nuevo, <?php echo $_SESSION["usuario"] ?> !</div>  
+              <div class="saludo">Bienvenido a <?php echo $_SESSION["nombreLiga"] ?> !</div>  
               
             </div>    
            
@@ -46,11 +46,7 @@
             <a href="interfaz_administrador_liga.php">
             <img class="logo" src="imagenes/logo.png">  
             </a>
-            <div class="perfil" id="boton">
-                <?php
-                echo "<img  class='fotoPerfil' src='data:".$mostrar["tipo_foto"].";base64,".base64_encode($imagen)."'>";
-                ?>
-            </div>
+            <a class="ingreso" href="subligas.php" name="Opcion" value="1" style="color:#000000"> Atrás</a>
 
         </div>
             

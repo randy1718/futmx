@@ -38,7 +38,7 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
         <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
         <meta http-equiv="Pragma" content="no-cache">
     </head>
-    <body>
+    <body class="central">
         <div style="position: relative">
             
         <div class="rectangulo">
@@ -53,6 +53,7 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
            
 
         </div>
+            <div class="recuadro"> </div>
             
             <div class="saludo">Hola de nuevo, Juan!</div>
             <a href="ligas.php" name="Opcion" value="1" style="color:#000000">
@@ -83,6 +84,9 @@ $consulta="select foto,tipo_foto from usuario where NombreUsuario='$usuar'";
 
              </div>
             </a>
+            
+            
+            
             <div id="capa">
                 
             </div>

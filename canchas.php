@@ -109,6 +109,10 @@ session_start();
                             document.getElementById('crearCancha').style.display = "none";
                             document.getElementById('cap').classList.toggle('cap');
                         }
+                        function cerrarFormFoto() {
+                            document.getElementById('cambiar_foto').style.display = "none";
+                            document.getElementById('cap').classList.toggle('cap');
+                        }
 
                         function abrirCreacion() {
                             document.getElementById('crearCancha').style.display = "block";
@@ -224,6 +228,10 @@ session_start();
             
             
             <div id="cambiar_foto" class="act_foto">
+                <a href="javascript:cerrarFormFoto()">
+                    <img src="imagenes/5a5798809538462e5a82d431.png" class="x">
+                </a>
+                
                 
                 <form action="subirPhoto_Cancha.php" method="POST" enctype="multipart/form-data">
 

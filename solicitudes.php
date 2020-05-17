@@ -100,7 +100,7 @@ session_start();
             
            
         function eliminar(id){
-            if(confirm('¿Estas seguro que quieres eliminar la cuenta?')){
+            if(confirm('¿Estas seguro que quieres eliminar esta solicitud?')){
             cadena="id="+id;
 
            $.ajax({

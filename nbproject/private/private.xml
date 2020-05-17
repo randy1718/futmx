@@ -5,43 +5,17 @@
             <url>canchas.php</url>
             <bookmark id="1">
                 <name/>
-                <line>143</line>
+                <line>146</line>
                 <key/>
             </bookmark>
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/Futmx/cuenta.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/inter_liga.css</file>
-            <file>file:/C:/xampp/htdocs/Futmx/interfaz_administrador.html</file>
-            <file>file:/C:/xampp/htdocs/Futmx/solicitud.php</file>
             <file>file:/C:/xampp/htdocs/Futmx/interfaz.css</file>
-            <file>file:/C:/xampp/htdocs/Futmx/editCancha.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/Start.html</file>
-            <file>file:/C:/xampp/htdocs/Futmx/ligas.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/deslizar.js</file>
-            <file>file:/C:/xampp/htdocs/Futmx/capa.js</file>
-            <file>file:/C:/xampp/htdocs/Futmx/solicitudes.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/ingresar.html</file>
-            <file>file:/C:/xampp/htdocs/Futmx/solicitud.html</file>
-            <file>file:/C:/xampp/htdocs/Futmx/capa_canchas.js</file>
-            <file>file:/C:/xampp/htdocs/Futmx/canchas.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/obtenerFoto.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/ingresoLiga.css</file>
-            <file>file:/C:/xampp/htdocs/Futmx/conocemas.html</file>
-            <file>file:/C:/xampp/htdocs/Futmx/interfaz_administrador_liga.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/eliminarCancha.php</file>
+            <file>file:/C:/xampp/htdocs/Futmx/interface_administrador_liga_options.css</file>
+            <file>file:/C:/xampp/htdocs/Futmx/equipos.php</file>
             <file>file:/C:/xampp/htdocs/Futmx/cuenta_liga.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/operaciones.js</file>
-            <file>file:/C:/xampp/htdocs/Futmx/eliminarSolicitud.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/design.css</file>
-            <file>file:/C:/xampp/htdocs/Futmx/ingresarLiga.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/cambiarFoto.html</file>
-            <file>file:/C:/xampp/htdocs/Futmx/ingresar.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/crear_liga.html</file>
-            <file>file:/C:/xampp/htdocs/Futmx/interfaz_administrador.php</file>
-            <file>file:/C:/xampp/htdocs/Futmx/conocer.html</file>
         </group>
     </open-files>
 </project-private>

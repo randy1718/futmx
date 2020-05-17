@@ -107,7 +107,7 @@ while ($mostrar = mysqli_fetch_array($ejecutar)) {
                                 success: function (r) {
                                     if (r === "1") {
                                         alert("¡ERROR!" + r);
-                                        window.location.href = "cuenta_liga .php";
+                                        window.location.href = "cuenta_liga_admin.php";
                                     } else {
                                         alert("¡Listo! BYE :C" + r);
                                         window.location.href = "ingresar.html";
@@ -148,8 +148,8 @@ while ($mostrar = mysqli_fetch_array($ejecutar)) {
                         </div>
                     </a>
 
-                    <a href="interfaz_administrador_liga.php" class="begin" name="Opcion" value="1" >Inicio</a>
-                    <a href="cuenta_liga.php" class="editar" name="Opcion" value="1" >Cuenta</a> 
+                    <a href="inter_admin_liga.php" class="begin" name="Opcion" value="1" >Inicio</a>
+                    <a href="cuenta_liga_admin.php" class="editar" name="Opcion" value="1" >Cuenta</a> 
                     <a href="subligas.php" class="subliga" name="Opcion" value="1" >Subligas</a>
                     <a href="Start.html" class="salir" name="Opcion" value="1" >Salir</a>  
                 </div>
@@ -159,7 +159,7 @@ while ($mostrar = mysqli_fetch_array($ejecutar)) {
         </div>
 
         <div class="rectangulo">
-            <a href="interfaz_administrador_liga.php">
+            <a href="inter_admin_liga.php">
                 <img class="logo" src="imagenes/logo.png">  
             </a>
             <div class="perfil" id="boton">
