@@ -57,8 +57,8 @@ session_start();
             </thead>
 
                  <?php
-
-        $consulta="select * from solicitudesadminequipo";
+                 $usuar= $_SESSION["usuario"];
+        $consulta="select * from solicitudesadminequipo inner join liga on Liga=idLiga inner join usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
         $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
 
         if(!$ejecutar){
