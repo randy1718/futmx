@@ -566,8 +566,8 @@ textarea{
 }
 
 #slidebar{
-    top:63px;
-    left: 1630px;
+    top:62px;
+    left: 1600px;
     width: 400px;
     height:660px;
     background-color: rgba(255,255,255,1);
@@ -579,7 +579,7 @@ textarea{
 
 }
 #slidebar.active{
-    left:1126px;
+    left:1140px;
 }
 
 .salir{

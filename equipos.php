@@ -89,11 +89,14 @@ session_start();
                     document.getElementById('idEquipo').value = id;
                     document.getElementById('idE').value = id;
 
+
                 }
 
                 function cerrar() {
                     document.getElementById('info_equipo').style.display = "none";
                     document.getElementById('cap_equipos').classList.toggle('cap_equipos');
+                    document.getElementById('idE').value = 0;
+                    document.forms['jugadores'].submit();
                 }
 
 

@@ -89,7 +89,7 @@
 
 
 
-    <a href="tabla_posiciones.php" name="Opcion" value="1" style="color:#000000">
+    <a href="Posiciones.php" name="Opcion" value="1" style="color:#000000">
         <div class="tabla_posiciones">
 
             <img class="im" src="imagenes/01.jpg">

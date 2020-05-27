@@ -44,7 +44,7 @@ session_start();
             <div class="contenedor">
                 <div class="tabla">
                 <table border="1" align="center" bgColor="FFFFFF" class="sol_equipo" id="solicitudes_Equipo">
-            <thead
+            <thead>
                  <tr>
                      <td>Documento identidad</td>
                      <td>Nombre del solicitante</td>
