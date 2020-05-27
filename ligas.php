@@ -4,13 +4,13 @@
 $host = 'localhost';
 $user = "root";
 $password = '';
-$database = 'futmx';
+$database = 'id13484941_futmx1';
 $conexion = mysqli_connect($host, $user, $password, $database) or die("problemas de conexion");
 
 if (!$conexion) {
     echo"No se pudo conectar con el servidor";
 } else {
-    $base = mysqli_select_db($conexion, "futmx");
+    $base = mysqli_select_db($conexion, "id13484941_futmx1");
     if (!$base) {
         echo"No se encontro la base de datos";
     }
@@ -53,7 +53,7 @@ session_start();
                 <select name="Liga" class="li">
                        <option class="li" value="a">- Seleccione una liga -</option>
                     <?php
-                    $consulta = "select NombreUsuario, Nombre from usuario inner join liga on administrador=documento_identidad where idTipoUsuario='2'";
+                    $consulta = "select NombreUsuario, NombreLiga from usuario inner join liga on administrador=documento_identidad where idTipoUsuario='2'";
                     $ejecutar = mysqli_query($conexion, $consulta) or die("problems:" . mysqli_error($conexion));
 
                     if (!$ejecutar) {
@@ -65,7 +65,7 @@ session_start();
                     while ($mostrar = mysqli_fetch_array($ejecutar)) {
                         ?>
                         <tr>
-                            <option class="li" value="<?php echo $mostrar['NombreUsuario'] ?>"><?php echo $mostrar['NombreUsuario'] ?>-<?php echo $mostrar['Nombre'] ?></option>
+                            <option class="li" value="<?php echo $mostrar['NombreUsuario'] ?>"><?php echo $mostrar['NombreUsuario'] ?>-<?php echo $mostrar['NombreLiga'] ?></option>
                         </tr>
                         <?php
                     }

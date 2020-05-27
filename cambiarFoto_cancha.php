@@ -3,11 +3,11 @@
         $host='localhost';
         $user="root";
         $password='';
-        $database='futmx';
+        $database='id13484941_futmx1';
         $conexion= mysqli_connect($host, $user, $password, $database) or die("problemas de conexion");
         session_start();
         
-         $nombre_cancha= filter_input(INPUT_POST, "nombre");
+         $nombre_cancha= filter_input(INPUT_POST, "id13484941_futmx1");
          
          echo "1".$nombre_cancha;
 ?>

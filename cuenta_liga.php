@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = "root";
 $password = '';
-$database = 'futmx';
+$database = 'id13484941_futmx1';
 $conexion = mysqli_connect($host, $user, $password, $database) or die("problemas de conexion");
 session_start();
 
