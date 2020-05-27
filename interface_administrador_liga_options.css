@@ -388,7 +388,7 @@ textarea {
     width: 90px;
     height: 20px;
     border-radius: 25px;
-    background-color: #fff;
+    background-color: rgba(198,198,198,0.39);
 
     padding: 10px 25px;
     text-align: center;
@@ -398,7 +398,34 @@ textarea {
     font-family: Tw Cen MT, serif;
     text-shadow: 0px 3px 6px #C6C6C6;
     position: absolute;
-    box-shadow: 0px 3px 6px rgba(0, 79, 29, 0.2);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.ingreso_solicitudes {
+    margin-bottom: 20px;
+    margin-top: 8px;
+    margin-left: 920px;
+    width: 200px;
+
+    border-radius: 20px;
+    background-color: rgba(48,139,158,0.99);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: 20px normal normal uppercase;
+    font-family: Tw Cen MT, serif;
+    color:#fff;
+
+    position: absolute;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.ingreso_solicitudes:hover{
+    color:#000;
+    background-color: rgba(123,185,198,0.68);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .solicitud {
@@ -432,7 +459,7 @@ textarea {
 }
 
 .ingreso:hover {
-    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.2);
+    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.4);
 }
 
 .solicitud:hover {
@@ -1512,7 +1539,7 @@ textarea {
 
 .tabla {
     width: 960px;
-    height: 333px;
+    height: 350px;
     margin-top: 50px;
     margin-left: 120px;
     margin-right: 120px;
@@ -1761,4 +1788,106 @@ td {
     margin-top: 10px;
     margin-left: 10px;
     overflow-y: auto;
+}
+
+
+.contenedor_partidos{
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+    margin-top: 125px;
+    margin-left: 250px;
+    background-color: #fff;
+}
+
+.contenedor_solicitudes{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left: 404.8px;
+    margin-top: 200px;
+}
+
+.act_equipo{
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 0px solid;
+    box-shadow: 0px 3px 6px rgba(12, 38, 9, 1);
+    outline: none;
+    background-color: #008463;
+    color: #fff;
+    font: 45px normal normal uppercase;
+    font-family: Tw Cen MT, serif;
+    margin-top: 440px;
+    margin-left: 220px;
+}
+.act_equipo:hover{
+    background-image:linear-gradient(to right, rgba(123,255,163,0.9) , #fff, rgba(255,93,127,0.9));
+    color:#000;
+}
+.act_jugador{
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 0px solid;
+    box-shadow: 0px 3px 6px rgba(12, 38, 9, 1);
+    outline: none;
+    background-color: #ffffff;
+    font: 45px normal normal uppercase;
+    font-family: Tw Cen MT, serif;
+    margin-top: 150px;
+    margin-left: 580px;
+}
+
+
+.act_jugador:hover{
+    background-image:linear-gradient(to right, rgba(123,255,163,0.9) , #fff, rgba(255,93,127,0.9));
+}
+
+.del_equipo{
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 0px solid;
+    box-shadow: 0px 3px 6px rgba(12, 38, 9, 1);
+    outline: none;
+    background-color:#ff1c26;
+    color: #fff;
+    font: 45px normal normal uppercase;
+    font-family: Tw Cen MT, serif;
+    margin-top: 80px;
+    margin-left: 1050px;
+}
+
+.del_equipo:hover{
+    background-image:linear-gradient(to right, rgba(123,255,163,0.9) , #fff, rgba(255,93,127,0.9));
+    color: #000;
+    background-color:#fff3cd;
+}
+
+.bote_basura{
+    width: 150px;
+    height: 150px;
+    margin-top: -20px;
+}
+
+.identidad{
+    width: 150px;
+    height: 150px;
+    margin-top: -10px;
+    margin-left: 15px;
+}
+
+.registro{
+    width: 150px;
+    height: 150px;
+    margin-top: -20px;
+    margin-left: 10px;
 }

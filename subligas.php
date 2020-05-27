@@ -51,7 +51,7 @@ session_start();
 
                     <?php
                     $usuar = $_SESSION["usuario"];
-                    $consulta = "select nombreSubliga from subliga inner join usuario on administrador=idUsuario where NombreUsuario='$usuar'";
+                    $consulta = "select nombreSubliga from subliga inner join usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
                     $ejecutar = mysqli_query($conexion, $consulta) or die("problems:" . mysqli_error($conexion));
 
                     if (!$ejecutar) {

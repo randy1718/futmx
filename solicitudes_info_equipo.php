@@ -40,17 +40,70 @@ session_start();
         <a href="interfaz_administrador_liga.php">
             <img class="logo" src="imagenes/logo.png">
         </a>
-        <a class="ingreso" href="interfaz_administrador_liga.php" name="Opcion" value="1" style="color:#000000">
+        <a class="ingreso" href="equipos.php" name="Opcion" value="1" style="color:#000000">
             Atrás</a>
     </div>
 
-    <div class="contenedor_partidos">
 
-    </div>
+    <button class="act_equipo">
+        <img class="registro" src="imagenes/registro.png">
+        Actualización equipo
+    </button>
+    <button class="del_equipo">
+        <img class="bote_basura" src="imagenes/bote.png">
+        Eliminacion<br> equipo
+    </button>
+    <button class="act_jugador">
+        <img class="identidad" src="imagenes/identidad.png">
+        Actualizacion jugador
+    </button>
+
 
     <br>
 </div>
+
+<div class="">
+
+</div>
+
+<div class="">
+
+</div>
+
+<div class="">
+
+</div>
+
+
 </body>
+
+<script type="text/javascript">
+    
+    function abrir1() {
+
+    }
+
+    function abrir2() {
+
+    }
+
+    function abrir3() {
+
+    }
+    
+    function cerrar1() {
+
+    }
+
+    function cerrar2() {
+
+    }
+
+    function cerrar3() {
+
+    }
+    
+</script>
 
 
 </html>

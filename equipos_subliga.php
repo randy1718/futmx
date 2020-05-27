@@ -38,12 +38,10 @@ session_start();
 <div style="position: relative">
 
     <div class="rectangulo">
-        <a href="interfaz_administrador_liga.php">
+        <a href="interfaz_subliga.php">
             <img class="logo" src="imagenes/logo.png">
         </a>
-        <a class="ingreso_solicitudes" href="solicitudes_info_equipo.php">
-            Solicitudes</a>
-        <a class="ingreso" href="interfaz_administrador_liga.php" name="Opcion" value="1" style="color:#000000">
+        <a class="ingreso" href="interfaz_subliga.php" name="Opcion" value="1" style="color:#000000">
             Atrás</a>
     </div>
 
@@ -51,7 +49,7 @@ session_start();
         <div class="groups">
 
             <?php
-            $usuar = $_SESSION["usuario"];
+            $usuar = $_SESSION['nombreLiga'];
             $consulta = "select * from equipos inner join liga on equipos.idLiga=liga.idLiga inner join usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
             $ejecutar = mysqli_query($conexion, $consulta) or die("problems:" . mysqli_error($conexion));
 
@@ -164,45 +162,45 @@ session_start();
 
         <div class="contenedor_jugadores">
 
-        <table border="1" align="center" bgColor="FFFFFF" class="jugadores" id="solicitudes_Equipo">
-            <thead
-            <tr>
-                <td>Numero</td>
-                <td>Nombre Jugador</td>
-                <td>Eliminar</td>
+            <table border="1" align="center" bgColor="FFFFFF" class="jugadores" id="solicitudes_Equipo">
+                <thead
+                <tr>
+                    <td>Numero</td>
+                    <td>Nombre Jugador</td>
+                    <td>Eliminar</td>
 
-            </tr>
-            </thead>
-            <?php
-            $usuar1 = $_SESSION["usuario"];
-            $id= filter_input(INPUT_POST, "idEqu");
-            $consulta1 = "select * from usuarios inner join jugadores on Cedula=idUsuario inner join equipos on id_Equipo=idEquipo where idEquipo='$id'";
-            $ejecutar2 = mysqli_query($conexion, $consulta1) or die("problems:" . mysqli_error($conexion));
+                </tr>
+                </thead>
+                <?php
+                $usuar1 = $_SESSION["usuario"];
+                $id= filter_input(INPUT_POST, "idEqu");
+                $consulta1 = "select * from usuarios inner join jugadores on Cedula=idUsuario inner join equipos on id_Equipo=idEquipo where idEquipo='$id'";
+                $ejecutar2 = mysqli_query($conexion, $consulta1) or die("problems:" . mysqli_error($conexion));
 
-            if (!$ejecutar1) {
-                echo "hubo algun error";
-            } else {
+                if (!$ejecutar1) {
+                    echo "hubo algun error";
+                } else {
 
-            }
+                }
 
-            while ($mostrar = mysqli_fetch_array($ejecutar2)) {
-                $idJugador=$mostrar['Cedula'];
-                $numero=$mostrar['Numero'];
-                $nombre=$mostrar['Nombre'];
-            ?>
-            <tr>
-                <td><?php echo $numero ?></td>
-                <td><?php echo $nombre ?></td>
+                while ($mostrar = mysqli_fetch_array($ejecutar2)) {
+                    $idJugador=$mostrar['Cedula'];
+                    $numero=$mostrar['Numero'];
+                    $nombre=$mostrar['Nombre'];
+                    ?>
+                    <tr>
+                        <td><?php echo $numero ?></td>
+                        <td><?php echo $nombre ?></td>
 
-                <td><button class="agregarEquipo" onclick="eliminarJugador('<?php echo $idJugador ?>')">
+                        <td><button class="agregarEquipo" onclick="eliminarJugador('<?php echo $idJugador ?>')">
 
-                    </button></td>
+                            </button></td>
 
-            </tr>
-            <?php
-            }
-            ?>
-        </table>
+                    </tr>
+                    <?php
+                }
+                ?>
+            </table>
 
         </div>
 

@@ -358,23 +358,28 @@ textarea{
 }
 
 .ingreso {
-    margin-bottom:20px;
+    margin-bottom: 20px;
     margin-top: 8px;
-    margin-left:1140px;
-    width:90px;
+    margin-left: 1140px;
+    width: 90px;
     height: 20px;
-    border-radius:25px;
-    background-color: #fff;
+    border-radius: 25px;
+    background-color: rgba(198,198,198,0.39);
 
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:20px normal normal uppercase;
-    font-family: Tw Cen MT,serif;
+    font: 20px normal normal uppercase;
+    font-family: Tw Cen MT, serif;
     text-shadow: 0px 3px 6px #C6C6C6;
     position: absolute;
-    box-shadow: 0px 3px 6px rgba(0,79,29,0.2);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+.ingreso:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .solicitud {
@@ -541,10 +546,10 @@ textarea{
 
 .saludo_subliga{
     margin-top:0px;
-    margin-left:0px;
+    margin-left:25px;
     margin-right:0px;
     position: absolute;
-    width: 540px;
+    width:max-content;
     font:45px normal normal uppercase;
     font-family: Tw Cen MT,serif;
     text-align: center;
@@ -649,10 +654,10 @@ textarea{
 
 .ad_subliga {
     position: absolute;
-    width: 540px;
+    width:700px;
     height:50px;
     margin-top: -3px;
-    margin-left: 800px;
+    margin-left: 410px;
     margin-right: 259.8px;
     border-radius: 31px;
     background-color: rgba(183,199,185,0.4);
@@ -1071,7 +1076,7 @@ textarea{
 
 .delete_cancha{
     position:absolute;
-    margin-top: 340px;
+    margin-top: 350px;
     margin-left: 420px;
     width: 350px;
     height: 50px;
