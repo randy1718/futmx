@@ -194,7 +194,7 @@ session_start();
                 <td><?php echo $numero ?></td>
                 <td><?php echo $nombre ?></td>
 
-                <td><button class="agregarEquipo" onclick="eliminarJugador('<?php echo $idJugador ?>')">
+                <td><button class="eliminarJugador" onclick="eliminarJugador('<?php echo $idJugador ?>')">
 
                     </button></td>
 

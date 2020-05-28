@@ -93,39 +93,40 @@ session_start();
                 if ($fecha == $fechaActual) {
                     if ($pagoA == 0 && $pagoB == 0) {
                         ?>
-                        <div><?php echo $EQUIPOA . "y" . $EQUIPOB ?> pieden por default por no pagar</div>
+                        <div class="ambosPierden"><?php echo $EQUIPOA . "y" . $EQUIPOB ?> pierden por default por no pagar</div>
                         <?php
 
                     } else if ($pagoA == 0) {
                         ?>
-                        <div><?php echo $EQUIPOB ?> piede por default por no pagar</div>
+                        <div class="pierdeA"><?php echo $EQUIPOB ?> pierde por default por no pagar</div>
                         <?php
                     } else if ($pagoB == 0) {
                         ?>
-                        <div><?php echo $EQUIPOB ?> piede por default por no pagar</div>
+                        <div class="pierdeB"><?php echo $EQUIPOB ?> pierde por default por no pagar</div>
                         <?php
                     }
                 } else {
-
-                    echo"El partido del dia".$fecha;
+                    ?>
+                    <div class="diaPartido"><?php echo"El partido del dia:"?><br><?php echo $fecha?></div>
+                    <?php
 
                     if ($pagoA == 0) {
                         ?>
-                        <div><?php echo $EQUIPOA ?> aun no ha pagado</div>
+                        <div class="nopagoA"><?php echo $EQUIPOA ?> aun no ha pagado</div>
                         <?php
                     } else if ($pagoA == 1) {
                         ?>
-                        <div><?php echo $EQUIPOA ?> ya pagó</div>
+                        <div class="pagoA"><?php echo $EQUIPOA ?> ya pagó</div>
                         <?php
                     }
 
                     if ($pagoB == 0) {
                         ?>
-                        <div><?php echo $EQUIPOB ?> aun no ha pagado</div><br>
+                        <div class="nopagoB"><?php echo $EQUIPOB ?> aun no ha pagado</div><br><br>
                         <?php
                     } else if ($pagoB == 1) {
                         ?>
-                        <div><?php echo $EQUIPOB ?> ya pagó</div><br>
+                        <div class="pagoB"><?php echo $EQUIPOB ?> ya pagó</div><br><br>
                         <?php
                     }
 

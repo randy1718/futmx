@@ -30,7 +30,7 @@ session_start();
     <script src="tabla.js"></script>
     <script src="librerias/bootstrap/js/bootstrap.js"></script>
     <script src="librerias/alertifyjs/alertify.js"></script>
-    <script src="capa_canchas.js"></script>
+    <script src="capa_solicitudes.js"></script>
 </head>
 <body class="canchass">
 
@@ -45,15 +45,15 @@ session_start();
     </div>
 
 
-    <button class="act_equipo">
+    <button class="act_equipo" onclick="abrir1()">
         <img class="registro" src="imagenes/registro.png">
         Actualización equipo
     </button>
-    <button class="del_equipo">
+    <button class="del_equipo" onclick="abrir3()">
         <img class="bote_basura" src="imagenes/bote.png">
         Eliminacion<br> equipo
     </button>
-    <button class="act_jugador">
+    <button class="act_jugador" onclick="abrir2()">
         <img class="identidad" src="imagenes/identidad.png">
         Actualizacion jugador
     </button>
@@ -62,15 +62,19 @@ session_start();
     <br>
 </div>
 
-<div class="">
+<div id="capa">
 
 </div>
 
-<div class="">
+<div class="cuadro_actEquipo" id="ae">
 
 </div>
 
-<div class="">
+<div class="cuadro_actJugador" id="aj">
+
+</div>
+
+<div class="cuadro_detEquipo" id="de">
 
 </div>
 
@@ -80,27 +84,33 @@ session_start();
 <script type="text/javascript">
     
     function abrir1() {
-
+        document.getElementById('ae').style.display = "block";
+        document.getElementById('capa').classList.toggle('capa');
     }
 
     function abrir2() {
-
+        document.getElementById('aj').style.display = "block";
+        document.getElementById('capa').classList.toggle('capa');
     }
 
     function abrir3() {
-
+        document.getElementById('de').style.display = "block";
+        document.getElementById('cap').classList.toggle('cap');
     }
     
     function cerrar1() {
-
+        document.getElementById('ae').style.display = "none";
+        document.getElementById('capa').classList.toggle('capa');
     }
 
     function cerrar2() {
-
+        document.getElementById('aj').style.display = "none";
+        document.getElementById('capa').classList.toggle('capa');
     }
 
     function cerrar3() {
-
+        document.getElementById('de').style.display = "none";
+        document.getElementById('capa').classList.toggle('capa');
     }
     
 </script>

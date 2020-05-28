@@ -1603,6 +1603,33 @@ thead {
     margin-left: -2px;
 }
 
+td{
+    width: 10%;
+    font-size: 125%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.td1 {
+    text-align: center;
+    width: 20%;
+    font-size: 120%;
+}
+
+.td2 {
+    text-align: center;
+    width: 9%;
+}
+
+.tr1 {
+    background-color: green;
+}
+
+.tr2 {
+
+    background-color: white;
+}
 
 .eliminar {
     width: 45px;
@@ -1611,12 +1638,12 @@ thead {
     outline: none;
     background-color: #f47263;
     border: 0.5px solid rgba(118, 214, 188, 0.2);
-    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.7);
+    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.3);
 
 }
 
 .eliminar:hover {
-    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.3);
+    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.7);
 }
 
 .x {
@@ -1635,26 +1662,11 @@ thead {
     outline: none;
     background-color: #57d288;
     border: 0.5px solid rgba(118, 214, 188, 0.2);
-    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.7);
+    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.3);
 }
 
 .agregarEquipo:hover {
-    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.3);
-}
-
-.eliminarJugador{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    outline: none;
-    background-color: rgba(255,119,68,0.9);
-    border: 0px solid rgba(118, 214, 188, 0.2);
     box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.7);
-}
-
-.eliminarJugador:hover {
-    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.3);
-    background-image: linear-gradient(to top,rgba(255,49,86,0.9),rgba(255,119,68,0.9));
 }
 
 .recuadro {
@@ -1676,16 +1688,15 @@ thead {
     height: 180px;
     margin-top: 150px;
     margin-left: 800px;
-    color: #007855;
-    background-image: linear-gradient(to right, #ebffe8,#9ba8ff);
-
+    color: #2b54cb;
+    background-color: rgba(255, 240, 230, 0.7);
     border: 0px solid;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: Tw Cen MT, serif;
     font-size: 140px;
     text-align: center;
     font-weight: bold;
-
+    text-shadow: 0px 3px 6px rgba(255, 151, 38, 0.9);
 }
 
 .groups {
@@ -1705,18 +1716,18 @@ thead {
     border: 1px solid #fff;
     border-radius: 50%;
     outline: none;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 150px;
     text-align: center;
-    box-shadow: 0px 3px 6px rgba(12, 38, 9, 1);
+    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.5);
     cursor: pointer;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     float: next;
 
 }
 
 .balls:hover {
-    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.5);
+    box-shadow: 0px 3px 6px rgba(12, 38, 9, 1);
 }
 
 .n_equipo {
@@ -1751,111 +1762,18 @@ thead {
 
     position: absolute;
     width: 900px;
-    height: 660px;
+    height: 600px;
     border-radius: 10px;
     background-color: #fff;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 300px;
-    font: 25px normal normal uppercase;
-    font-family: Tw Cen MT, serif;
 
-}
-
-.ambosPierden{
-    width: 500px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #ff8c85;
-    border: 0px solid;
-    border-radius: 10px;
-    text-align: center;
-    margin-left: 190px;
-}
-
-.pierdeA{
-    width: 500px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #ff8c85;
-    border: 0px solid;
-
-    text-align: center;
-    margin-left: 190px;
-}
-
-.pierdeB{
-    width: 500px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #ff8c85;
-    border: 0px solid;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-left: 190px;
-}
-
-.nopagoA{
-    width: 500px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #ff8c85;
-    border: 0px solid;
-    text-align: center;
-
-    margin-left: 190px;
-}
-
-.nopagoB{
-    width: 500px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #ff8c85;
-    border: 0px solid;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-left: 190px;
-
-}
-
-.pagoA{
-    width: 500px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #8bffbb;
-    border: 0px solid;
-    text-align: center;
-    margin-left: 190px;
-}
-
-.pagoB{
-    width: 500px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #8bffbb;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-left: 190px;
-}
-
-.diaPartido{
-    width: 500px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #76aaff;
-    border: 0px solid;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-left: 190px;
 }
 
 .contenedor_pagos {
     position: absolute;
     width: 880px;
-    height: 580px;
+    height: 440px;
     border-radius: 10px;
     background-color: #fff;
     margin-top: 10px;
