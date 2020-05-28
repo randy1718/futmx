@@ -59,8 +59,9 @@
 <div class="opciones_1">
     <a href="canchas.php" name="Opcion" value="1" style="color:#000000" title="Canchas" onmouseover="window.status='Canchas';return true" onmouseout="window.status='';return true" >
         <div class="canchas">
-
-            <img class="im" src="imagenes/canchas.jpg" >
+            <div class="im_cac">
+            <img class="im_c" src="imagenes/Football_2-36_icon-icons.com_72119.png" >
+            </div>
             <div class="txt2">Canchas</div>
 
         </div>
@@ -68,8 +69,9 @@
 
     <a href="solicitudes_equipos.php" name="Opcion" value="1" style="color:#000000">
         <div class="solicitudes">
-
-            <img class="im" src="imagenes/Grupo 10.png">
+            <div class="im_sas">
+                <img class="im_s" src="imagenes/1486164749-120_79719.png">
+            </div>
             <div class="txt2">Solicitudes</div>
 
             <?php if($numero_solicitudes>0){?>
@@ -91,8 +93,9 @@
 
     <a href="Posiciones.php" name="Opcion" value="1" style="color:#000000">
         <div class="tabla_posiciones">
-
-            <img class="im" src="imagenes/01.jpg">
+            <div class="im_pap">
+            <img class="im_p" src="imagenes/Football_2-20_icon-icons.com_72099.png">
+            </div>
             <div class="txt2">Posiciones</div>
 
         </div>
@@ -101,7 +104,7 @@
     <a href="partidos.php" name="Opcion" value="1" style="color:#000000">
         <div class="partidos">
             <div class="ima_dad">
-                <img class="ima" src="imagenes/img_410939.png">
+                <img class="ima" src="imagenes/Football_2-30_icon-icons.com_72093.png">
             </div>
             <div class="txt2">Partidos</div>
 
@@ -110,8 +113,9 @@
 
     <a href="equipos.php" name="Opcion" value="1" style="color:#000000">
         <div class="equipos">
-
-            <img class="im" src="imagenes/g.jpg">
+            <div class="im_ede">
+            <img class="im_e" src="imagenes/Football_2-62_icon-icons.com_72096.png">
+            </div>
             <div class="txt2">Equipos</div>
 
         </div>

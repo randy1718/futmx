@@ -1,9 +1,15 @@
 
 body {
-    background: url("imagenes/combinado.jpg");
-    background-size: cover;
+    background: url("imagenes/Grupo 14.png");
+    background-size:100%;
     height: 600px;
     overflow-x: hidden;
+
+}
+
+body::after{
+    background: url("imagenes/lineas.jpg");
+    opacity: 0.5;
 }
 
 .logo {
@@ -12,15 +18,28 @@ body {
 }
 
 .balon {
-    left: 40%;
-    top: 50px;
-    align-items: center;
+    left: 1150px;
+    top: 80px;
     position: absolute;
-    opacity: 0.7;
+    width: 300px;
+    height: 300px;
+    opacity: 0.6;
     transform: rotate(360deg);
-    animation: 1s rotate linear infinite;
+    animation: 2s rotate linear infinite;
     -webkit-transition: 3s all;
+    animation-name: movimiento;
 
+}
+
+@keyframes movimiento {
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
 }
 
 .escudo {
@@ -39,6 +58,13 @@ body {
 .b {
     width: 300px;
     height: 300px;
+    animation-name: tamano;
+}
+
+@keyframes tamano {
+    from{width: 200%}
+    to{width: 50%}
+
 }
 
 .rectangulo {
@@ -56,7 +82,7 @@ body {
     border-radius: 10px;
     height: 15px;
     width: 200px;
-    top: 380px;
+    top: 390px;
     left: 210px;
     position: absolute;
 }
@@ -66,7 +92,7 @@ body {
     border-radius: 10px;
     height: 15px;
     width: 200px;
-    top: 380px;
+    top: 390px;
     left: 1090px;
     position: absolute;
 }
@@ -74,7 +100,7 @@ body {
 .cuadrado {
     width: 1100px;
     height: 533px;
-    background-color: #fff;
+    background-color: #fff ;
     margin-top: 200px;
     margin-left: 200px;
     margin-right: 200px;
@@ -82,6 +108,7 @@ body {
     border-top-right-radius: 43px;
     align-content: center;
     position: absolute;
+
 }
 
 .cuadrado_completo {
@@ -102,7 +129,7 @@ body {
     width: 700px;
     height: 550px;
     background-color: #fff;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 369px;
     margin-right: 369px;
     border-radius: 43px;
@@ -173,7 +200,7 @@ body {
     font-size: 77px;
     font-weight: bold;
     color: #223CE4;
-    padding-top: 100px;
+    padding-top: 120px;
     text-shadow: 0px 3px 6px #E79747;
 }
 
@@ -318,20 +345,20 @@ button[type="submit"]:hover {
     margin-bottom: 20px;
     margin-right: 300px;
     margin-top: 80px;
-    margin-left: 300px;
-    width: 450px;
+    margin-left: 320px;
+    width: 420px;
     height: 60px;
-    border-radius: 15px;
-    background-image: linear-gradient(to top,#fffccf,#cbf3ff);
+    border-radius: 5px;
+    border:0.8px solid #0e1021;
+    background-image: linear-gradient(to top,#fff,#fff);
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font: 54px normal normal uppercase;
+    font: 57px normal normal uppercase;
     font-family: Tw Cen MT, serif;
-
     position: absolute;
-    box-shadow: 0px 1px 3px rgba(0, 79, 29, 0.8);
+    box-shadow: 0px 1px 3px rgba(0, 79, 29, 0);
 }
 
 .ingreso {

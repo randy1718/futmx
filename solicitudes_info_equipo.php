@@ -95,7 +95,7 @@ session_start();
 
     function abrir3() {
         document.getElementById('de').style.display = "block";
-        document.getElementById('cap').classList.toggle('cap');
+        document.getElementById('capa').classList.toggle('capa');
     }
     
     function cerrar1() {

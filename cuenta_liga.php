@@ -28,7 +28,7 @@ while ($mostrar = mysqli_fetch_array($ejecutar)) {
             <title>FUTMX</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" type="text/css" href="interfaz.css">
+            <link rel="stylesheet" type="text/css" href="inter_cuenta_liga.css">
             <link rel="icon" href="imagenes/balon.png">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="deslizar.js"></script>
@@ -151,6 +151,7 @@ while ($mostrar = mysqli_fetch_array($ejecutar)) {
                     <a href="interfaz_administrador_liga.php" class="begin" name="Opcion" value="1" >Inicio</a>
                     <a href="cuenta_liga.php" class="editar" name="Opcion" value="1" >Cuenta</a> 
                     <a href="subligas.php" class="subliga" name="Opcion" value="1" >Subligas</a>
+                    <a href="pago_arbitraje.php" class="pagos" name="Opcion" value="1" >Pagos</a>
                     <a href="Start.html" class="salir" name="Opcion" value="1" >Salir</a>  
                 </div>
                 <?php

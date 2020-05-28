@@ -42,9 +42,53 @@ session_start();
         </a>
         <a class="ingreso" href="interfaz_administrador_liga.php" name="Opcion" value="1" style="color:#000000">
             Atrás</a>
+        <a class="gen_partidos" href="partidos.php" name="Opcion" value="1" style="color:#000000">
+            Generar partidos</a>
     </div>
 
     <div class="contenedor_partidos">
+
+        <?php
+        $usuar = $_SESSION["usuario"];
+        $query_equipos = "select count(*) as numeroEquipos from equipos inner join liga on liga.idLiga=equipos.idLiga inner join
+        usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
+        $query_partidos = "select count(*) as partidos from partido inner join liga on partido.Liga=liga.idLiga inner join
+        usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
+        $ejecutar = mysqli_query($conexion, $query_equipos) or die("problems:" . mysqli_error($conexion));
+        $execute = mysqli_query($conexion, $query_partidos) or die("problems:" . mysqli_error($conexion));
+        $mostrar = mysqli_fetch_array($ejecutar);
+        $numPartidos = mysqli_fetch_array($execute);
+        $numeroEquipos = $mostrar['numeroEquipos'];
+        $numeroPartidos = $numPartidos['partidos'];
+
+        if (!$ejecutar) {
+            echo "hubo algun error";
+        } else {
+            echo "" . $numeroPartidos;
+        }
+
+        if ($numeroEquipos >= 10 && $numeroEquipos%2==0) {
+            if($numeroPartidos==0){
+            ?>
+
+            <div>¡Hay suficientes equipos!</div><br>
+            <div>Oprima en generar partidos</div>
+
+            <?php
+            }
+        } else {
+            ?>
+
+
+            <div class="a">¡No hay suficientes equipos!</div><br>
+            <div class="eq">Hay <?php echo $numeroEquipos ?> equipos registrados</div>
+            <div class="i"><img class="img_jugadores" src="imagenes/Football_2-61_icon-icons.com_72117.png"> </div>
+            <div class="min">Deben haber mínimo 10 equipos inscritos</div>
+
+            <?php
+        }
+
+        ?>
 
     </div>
 

@@ -401,6 +401,29 @@ textarea {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
+.gen_partidos {
+    margin-bottom: 20px;
+    margin-top: 8px;
+    margin-left: 900px;
+    width: 150px;
+    height: 20px;
+    border-radius: 25px;
+    background-color:#edf78f;
+
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: 20px normal normal uppercase;
+    font-family: Tw Cen MT, serif;
+    text-shadow: 0px 3px 6px #C6C6C6;
+    position: absolute;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+}
+.gen_partidos:hover{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
 .ingreso_solicitudes {
     margin-bottom: 20px;
     margin-top: 8px;
@@ -1897,7 +1920,7 @@ thead {
     font: 45px normal normal uppercase;
     font-family: Tw Cen MT, serif;
     margin-top: 440px;
-    margin-left: 220px;
+    margin-left: 180px;
 }
 .act_equipo:hover{
     background-image:linear-gradient(to right, rgba(123,255,163,0.9) , #fff, rgba(255,93,127,0.9));
@@ -1914,8 +1937,8 @@ thead {
     background-color: #ffffff;
     font: 45px normal normal uppercase;
     font-family: Tw Cen MT, serif;
-    margin-top: 150px;
-    margin-left: 580px;
+    margin-top: 240px;
+    margin-left: 600px;
 }
 
 
@@ -1963,4 +1986,40 @@ thead {
     height: 150px;
     margin-top: -20px;
     margin-left: 10px;
+}
+
+.img_jugadores{
+    width: 300px;
+    height: 300px;
+}
+.i{
+    margin-top: 150px;
+    position: absolute;
+    margin-left: 350px;
+}
+
+.min{
+    position: absolute;
+    font: 50px normal normal uppercase;
+    font-family: Tw Cen MT, serif;
+    margin-top: 480px;
+    text-align: center;
+    width: 1000px;
+}
+
+.a{
+    position: absolute;
+    width: 1000px;
+    text-align: center;
+    font: 60px normal normal uppercase;
+    font-family: Tw Cen MT, serif;
+}
+
+.eq{
+    position: absolute;
+    width: 1000px;
+    text-align: center;
+    font: 50px normal normal uppercase;
+    font-family: Tw Cen MT, serif;
+    margin-top: 100px;
 }

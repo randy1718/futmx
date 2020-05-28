@@ -475,15 +475,6 @@ textarea{
 
 .im{
     width: 260px;
-    height: 185px;;
-    position:  absolute;
-    object-fit: cover;
-    border-top-left-radius: 31px;
-    border-top-right-radius: 31px;
-}
-
-.im_s{
-    width: 260px;
     height: 185px;
     position:  absolute;
     object-fit: cover;
@@ -491,12 +482,87 @@ textarea{
     border-top-right-radius: 31px;
 }
 
-.ima{
-    width: 170px;
-    height: 170px;
+.im_e{
+    width: 76%;
     position:  absolute;
-    margin-top: 5px;
-    margin-left: 46px;
+    object-fit: cover;
+    margin-left: 30px;
+    margin-top: -15px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+}
+
+.im_ede{
+    width: 260px;
+    height: 185px;
+    position:  absolute;
+    object-fit: cover;
+    background-color: #d1f4f7;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+}
+
+.im_c{
+    width: 70%;
+    margin-left: 40px;
+    position:  absolute;
+    object-fit: cover;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+}
+.im_cac{
+    width: 260px;
+    height: 185px;
+    position:  absolute;
+    object-fit: cover;
+    background-color: #d1f4f7;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+}
+
+.im_p{
+    width: 70%;
+    position:  absolute;
+    object-fit: cover;
+    margin-left: 40px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+}
+
+.im_pap{
+    width: 260px;
+    height: 185px;
+    position:  absolute;
+    object-fit: cover;
+    background-color: #d1f4f7;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+}
+
+.im_sas{
+    width: 260px;
+    height: 185px;
+    position:  absolute;
+    object-fit: cover;
+    background-color: #d1f4f7;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+}
+.im_s{
+    width: 80%;
+    position:  absolute;
+    object-fit: cover;
+    margin-left: 30px;
+    margin-top: -10px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+}
+
+.ima{
+    width: 80%;
+    position:  absolute;
+    margin-top: -10px;
+    margin-left: 27px;
     margin-right: 60px;
     object-fit: cover;
 }
@@ -505,7 +571,7 @@ textarea{
     height: 185px;
     position:  absolute;
     object-fit: cover;
-    background-color: #aefce0;
+    background-color: #d1f4f7;
     border-top-left-radius: 31px;
     border-top-right-radius: 31px;
 }
@@ -570,7 +636,7 @@ textarea{
     cursor:pointer;
 }
 
-#slidebar{
+    #slidebar{
     top:62px;
     left: 1600px;
     width: 400px;
@@ -665,9 +731,9 @@ textarea{
 .begin{
     position: absolute;
     margin-top: 500px;
-    width: 240px;
+    width: 260px;
     height: 30px;
-    margin-left: 80px;
+    margin-left: 70px;
     margin-right: 75px;
     background-color: #5FBAA7;
     padding-top: 10px;
@@ -677,17 +743,21 @@ textarea{
     display: inline-block;
     font:30px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 25px;
+    border-radius: 15px;
     color:black;
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+    box-shadow: 0px 3px 5px rgba(12,38,9,0.8);
+}
+
+.begin:hover{
+    box-shadow: 0px 3px 5px rgba(12,38,9,0.2);
 }
 
 .subliga{
     position: absolute;
     margin-top: 260px;
-    width: 240px;
+    width: 260px;
     height: 30px;
-    margin-left: 80px;
+    margin-left: 70px;
     margin-right: 75px;
     background-color: #5FBAA7;
     padding-top: 10px;
@@ -697,9 +767,13 @@ textarea{
     display: inline-block;
     font:30px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 25px;
+    border-radius: 15px;
     color:black;
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.8);
+}
+
+.subliga:hover{
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.3);
 }
 
 
@@ -815,9 +889,9 @@ textarea{
 .editar{
     position: absolute;
     margin-top: 340px;
-    width: 240px;
+    width: 260px;
     height: 30px;
-    margin-left: 80px;
+    margin-left: 70px;
     margin-right: 75px;
     background-color: #5FBAA7;
     padding-top: 10px;
@@ -827,17 +901,20 @@ textarea{
     display: inline-block;
     font:30px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 25px;
+    border-radius: 15px;
     color:black;
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+    box-shadow: 0px 3px 5px rgba(12,38,9,0.8);
+}
+.editar:hover{
+    box-shadow: 0px 3px 5px rgba(12,38,9,0.3);
 }
 
 .pagos{
     position: absolute;
     margin-top: 420px;
-    width: 240px;
+    width: 260px;
     height: 30px;
-    margin-left: 80px;
+    margin-left: 70px;
     margin-right: 75px;
     background-color: #5FBAA7;
     padding-top: 10px;
@@ -847,9 +924,13 @@ textarea{
     display: inline-block;
     font:30px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 25px;
+    border-radius: 15px;
     color:black;
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+    box-shadow: 0px 3px 5px rgba(12,38,9,0.8);
+}
+
+.pagos:hover{
+    box-shadow: 0px 3px 5px rgba(12,38,9,0.3);
 }
 
 .informacion{
