@@ -545,7 +545,7 @@ outline: none;
     position: absolute;
     text-align: center;
     border-collapse: collapse;
-    width: 950px;
+    width: 1000px;
     border-radius: 60px;
     border:1px solid #828D8B;
     font-family: Tw Cen MT,serif;
@@ -601,11 +601,11 @@ thead{
 }
 
 .tabla{
-    width: 960px;
+    width: 1020px;
     height: 333px;
     background-color: #fff;
     margin-top: 50px;
-     margin-left: 120px;
+     margin-left: 100px;
      margin-right: 120px;
      align-content: center;
      position: absolute;

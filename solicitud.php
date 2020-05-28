@@ -21,10 +21,11 @@ if (!$conexion) {
 $nombre = filter_input(INPUT_POST, "u");
 $celular = filter_input(INPUT_POST, "c");
 $email = filter_input(INPUT_POST, "e");
+$comentarios = filter_input(INPUT_POST, "comentarios");
 
 
 
-$sql = "insert into solicitud_liga(nombre_completo, celular, email) values ('$nombre','$celular','$email')";
+$sql = "insert into solicitud_liga(nombre_completo, celular, email,comentarios) values ('$nombre','$celular','$email','$comentarios')";
 
 
 $ejecutar = mysqli_query($conexion, $sql) or die("problems:" . mysqli_error($conexion));

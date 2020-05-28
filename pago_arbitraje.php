@@ -47,6 +47,13 @@ session_start();
     <br>
 
     <div class="cuadro_pagos">
+        <?php
+        $sqlFech = "select curdate() as fecha";
+        $ej3 = mysqli_query($conexion, $sqlFech) or die("problems:" . mysqli_error($conexion));
+        $date = mysqli_fetch_array($ej3);
+        $dateActual = $date['fecha'];
+        ?>
+        <div><?php echo $dateActual?></div>
         <div class="contenedor_pagos">
 
             <?php

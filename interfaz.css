@@ -11,7 +11,7 @@
     background: url("imagenes/minimalist.jpg");
     background-size:cover;
     height: 593px;
-    overflow-x: hidden; 
+    overflow: hidden;
 }
 
 .cuenta_liga{
@@ -689,7 +689,7 @@ input:focus, button:focus textarea:focus{
     top:53px;
     left: 1582px;
     width: 400px;
-    height:590px;
+    height:550px;
     background-color: rgba(255,255,255,1);
     position: absolute;
     transition: all 200ms linear;
@@ -704,7 +704,7 @@ input:focus, button:focus textarea:focus{
 
 .salir{
     position: absolute;
-    margin-top: 530px;
+    margin-top: 490px;
     width: 100px;
     margin-left: 125px;
     margin-right: 125px;
@@ -805,10 +805,10 @@ input:focus, button:focus textarea:focus{
 
 .editar{
     position: absolute;
-    margin-top: 350px;
-    width: 240px;
+    margin-top: 300px;
+    width: 260px;
     height: 30px;
-    margin-left: 80px;
+    margin-left: 70px;
     margin-right: 75px;
     background-color: #5FBAA7;
     padding-top: 10px;
@@ -818,16 +818,20 @@ input:focus, button:focus textarea:focus{
     display: inline-block;
     font:30px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 25px;
+    border-radius: 15px;
     color:black;
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.8);
+}
+.editar:hover{
     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
 }
+
 .begin{
     position: absolute;
-    margin-top: 440px;
-    width: 240px;
+    margin-top: 390px;
+    width: 260px;
     height: 30px;
-    margin-left: 80px;
+    margin-left: 70px;
     margin-right: 75px;
     background-color: #5FBAA7;
     padding-top: 10px;
@@ -837,8 +841,12 @@ input:focus, button:focus textarea:focus{
     display: inline-block;
     font:30px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 25px;
+    border-radius: 15px;
     color:black;
+    box-shadow: 0px 3px 6px rgba(12,38,9,0.8);
+}
+
+.begin:hover{
     box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
 }
 

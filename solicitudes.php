@@ -55,13 +55,14 @@ session_start();
                      <td>Nombre solicitante</td>
                      <td>Celular</td>
                      <td>Email</td>
+                     <td>Comentarios</td>
                      <td>Eliminar</td>
                  </tr>
             </thead>
 
                  <?php
 
-        $consulta="select id_solicitud_liga,nombre_completo,celular,email from solicitud_liga";
+        $consulta="select * from solicitud_liga";
         $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
 
         if(!$ejecutar){
@@ -77,6 +78,7 @@ session_start();
                 <td><?php echo $mostrar['nombre_completo'] ?></td>
                 <td><?php echo $mostrar['celular'] ?></td>
                 <td><?php echo $mostrar['email'] ?></td>
+                <td><?php echo $mostrar['comentarios'] ?></td>
                 <td>
                     <button class="eliminar" onclick="eliminar(<?php echo $mostrar['id_solicitud_liga'] ?>)">
                         <img class="x" src="imagenes/x-emoji-png-5.png" >
