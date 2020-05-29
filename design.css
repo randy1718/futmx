@@ -82,7 +82,7 @@ body::after{
     border-radius: 10px;
     height: 15px;
     width: 200px;
-    top: 390px;
+    top: 400px;
     left: 210px;
     position: absolute;
 }
@@ -92,7 +92,7 @@ body::after{
     border-radius: 10px;
     height: 15px;
     width: 200px;
-    top: 390px;
+    top: 400px;
     left: 1090px;
     position: absolute;
 }
@@ -112,17 +112,34 @@ body::after{
 }
 
 .cuadrado_completo {
-    width: 1400px;
-    height: 1000px;
+    width: 1150px;
+    height: 900px;
     background-color: #fff;
     margin-top: 100px;
-    margin-left: 20px;
-    margin-right: 30px;
+    margin-left: 179.8px;
+    margin-right: 179.8px;
     margin-bottom: 50px;
     border-radius: 20px;
-    left: 2%;
     align-content: center;
     position: absolute;
+}
+
+::-webkit-scrollbar {
+    margin-top: 10px;
+    margin-left: -5px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #5FBAA7;
 }
 
 .cuadrado_ingreso {
@@ -140,7 +157,7 @@ body::after{
 
 .cuadrado_solicitud {
     width: 1100px;
-    height: 1550px;
+    height: 1650px;
     background-color: #fff;
     margin-top: 50px;
     margin-left: 201.2px;
@@ -290,6 +307,55 @@ h1 {
 
 }
 
+.correoInput {
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-right: 139px;
+    margin-left: 55px;
+    margin-top: 120px;
+    width: 370px;
+    height: 20px;
+    padding: 10px;
+    padding-top: 15px;
+    border: 1px solid #707070;
+    position: absolute;
+    outline: none;
+    font-family: Tw Cen MT, serif;
+
+}
+
+.enviarCodigo{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 139px;
+    margin-left: 55px;
+    margin-top: 200px;
+    width: 390px;
+    padding: 14px;
+    border: 1px solid #000;
+    position: absolute;
+    outline: none;
+    background: #000;
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+    font-family: Tw Cen MT, serif;
+    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.2);
+
+}
+
+.label_contraseña{
+    font:25px normal normal uppercase;
+    font-family: Tw Cen MT,serif;
+    color:black;
+    width: 400px;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 55px;
+    text-align: center;
+}
+
+
 .recuperar {
     margin-bottom: 20px;
     margin-top: 240px;
@@ -301,7 +367,7 @@ h1 {
     display: inline-block;
     font: 20px normal normal uppercase;
     font-family: Tw Cen MT, serif;
-
+    cursor: pointer;
     position: absolute;
 }
 
@@ -358,7 +424,7 @@ button[type="submit"]:hover {
     font: 57px normal normal uppercase;
     font-family: Tw Cen MT, serif;
     position: absolute;
-    box-shadow: 0px 1px 3px rgba(0, 79, 29, 0);
+    box-shadow: 0px 1px 4px rgba(7, 10, 5, 0.5);
 }
 
 .ingreso {
@@ -367,7 +433,7 @@ button[type="submit"]:hover {
     margin-left: 1140px;
     width: 90px;
     height: 20px;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: #fff;
 
     padding: 10px 25px;
@@ -378,7 +444,7 @@ button[type="submit"]:hover {
     font-family: Tw Cen MT, serif;
     text-shadow: 0px 3px 6px #C6C6C6;
     position: absolute;
-    box-shadow: 0px 3px 6px rgba(0, 79, 29, 0.2);
+    box-shadow: 0px 3px 6px rgba(7, 10, 5, 0.2);
 }
 
 .solicitud {
@@ -387,7 +453,7 @@ button[type="submit"]:hover {
     margin-left: 850px;
     width: 220px;
     height: 20px;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: #fff;
     padding: 10px 25px;
     text-align: center;
@@ -397,19 +463,19 @@ button[type="submit"]:hover {
     font-family: Tw Cen MT, serif;
     text-shadow: 0px 3px 6px #C6C6C6;
     position: absolute;
-    box-shadow: 0px 3px 6px rgba(0, 79, 29, 0.2);
+    box-shadow: 0px 3px 6px rgba(7, 10, 5, 0.2);
 }
 
 .c:hover {
-    box-shadow: 0px 1px 3px rgba(12, 38, 9, 0.5);
+    box-shadow: 0px 1px 3px rgba(7, 10, 5, 0.1);
 }
 
 .ingreso:hover {
-    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.6);
+    box-shadow: 0px 3px 6px rgba(7, 10, 5, 0.1);
 }
 
 .solicitud:hover {
-    box-shadow: 0px 3px 6px rgba(12, 38, 9, 0.6);
+    box-shadow: 0px 3px 6px rgba(7, 10, 5, 0.1);
 }
 
 .saludo {
@@ -424,14 +490,38 @@ button[type="submit"]:hover {
 
 }
 
+.cap{
+    position: absolute;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: -10px;
+    width: 1610px;
+    height: 732px;
+    cursor:pointer;
+    background: rgba(0,0,0,0.5);
+}
+
+.enviarCorreo{
+    display: none;
+    width: 500px;
+    height: 360px;
+    background-color: #fff;
+    border: 0px solid;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 500px;
+}
+
 .first {
     width: 1000px;
-    height: 400px;
+    height: 950px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 200px;
+    margin-top: 180px;
     position: absolute;
-    border: 0.5px solid;
+    border: 0px solid;
+
 }
 
 .second {
@@ -533,7 +623,7 @@ button[type="submit"]:hover {
 .formulario {
     width: 500px;
     height: 400px;
-    margin-top: 1000px;
+    margin-top: 1100px;
     margin-bottom: 40px;
     margin-left: 520px;
     margin-right: 30px;
@@ -543,7 +633,7 @@ button[type="submit"]:hover {
 
 .mensaje {
     position: absolute;
-    margin-top: 1150px;
+    margin-top: 1250px;
     padding: 40px;
     width: 400px;
     height: 400px;
@@ -551,20 +641,280 @@ button[type="submit"]:hover {
     margin-right: 570px;
     text-align: center;
     font-family: Tw Cen MT, serif;
-    font-size: 40px;
+    font-size: 45px;
+}
+
+.imagenes{
+    position: absolute;
+    width: 340px;
+    height: 900px;
+    background-image: linear-gradient(to left, #d3fdff,#fff);
+    margin-left: 810px;
+    border-bottom-right-radius: 31px;
+    border-top-right-radius: 31px;
+
+}
+
+.degrade{
+    position: absolute;
+    width: 340px;
+    height: 1650px;
+    background-image: linear-gradient(to left, #fff9ea,#fff);
+    margin-left: 760px;
+    border-bottom-right-radius: 31px;
+    border-top-right-radius: 31px;
 }
 
 .imagen1 {
     position: absolute;
-    width: 450px;
-    height: 350px;
+    width: 230px;
+    height: 230px;
     margin-top: 30px;
-    margin-left: 900px;
-    border-radius: 10px;
+    margin-left:55px;
+    border-radius: 50%;
+    background-color: #edffd8;
 }
 
 .img1 {
-    width: 450px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
+
+.imagen2 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    margin-top: 290px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-color: #edffd8;
+}
+
+.img2 {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.imagen3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: 490px;
+    margin-left: 110px;
+    border-radius: 50%;
+    background-color: #edffd8;
+}
+
+.img3 {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.imagen4 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: 720px;
+    margin-left: 90px;
+    border-radius: 50%;
+    background-color: #edffd8;
+}
+
+.img4 {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.cancha{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    margin-top: 10px;
+    margin-left: 735px;
+    border-radius: 50%;
+    background-color: #edffd8;
+}
+
+
+
+.cancha_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-top: 35px;
+}
+
+
+.posicion{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    margin-top: 10px;
+    margin-left: 390px;
+    border-radius: 50%;
+    background-color: #edffd8;
+}
+
+.posicion_img{
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+.partido{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    margin-top: 480px;
+    margin-left: 45px;
+    border-radius: 50%;
+    background-color: #edffd8;
+}
+
+.partido_img{
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.message{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    margin-top: 10px;
+    margin-left: 45px;
+    border-radius: 50%;
+    background-color: #edffd8;
+}
+
+.message_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+
+.pago_arbitraje{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    margin-top: 480px;
+    margin-left: 390px;
+    border-radius: 50%;
+    background-color: #edffd8;
+}
+
+.arbitraje_img{
+    width: 190px;
+    height: 190px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: -5px;
+}
+
+.equipo{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    margin-top: 480px;
+    margin-left: 735px;
+    border-radius: 50%;
+    background-color: #edffd8;
+}
+
+.equipo_img{
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.text_message{
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    margin-top: 250px;
+    margin-left: 20px;
+    text-align: center;
+    font-family: Tw Cen MT, serif;
+    font-size: 35px;
+}
+
+.text_posicion{
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    margin-top: 250px;
+    margin-left: 365px;
+    text-align: center;
+    font-family: Tw Cen MT, serif;
+    font-size: 35px;
+}
+
+.text_cancha{
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    margin-top: 250px;
+    margin-left: 710px;
+    text-align: center;
+    font-family: Tw Cen MT, serif;
+    font-size: 35px;
+}
+
+.text_partido{
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    margin-top: 720px;
+    margin-left: 20px;
+    text-align: center;
+    font-family: Tw Cen MT, serif;
+    font-size: 35px;
+}
+
+.text_arbitraje{
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    margin-top: 720px;
+    margin-left: 365px;
+    text-align: center;
+    font-family: Tw Cen MT, serif;
+    font-size: 35px;
+}
+
+.text_equipo{
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    margin-top: 720px;
+    margin-left: 710px;
+    text-align: center;
+    font-family: Tw Cen MT, serif;
+    font-size: 35px;
+}
+
+
+
+

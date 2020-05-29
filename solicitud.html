@@ -1,74 +1,96 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>FUTMX</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="design.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="icon" href="imagenes/balon.png">
-        
-        <script src="operaciones.js"></script>
-    </head>
-    <body>
-        
-        <div style="position: relative">
-            
-        <div class="rectangulo">
-            <a href="Start.html">
-            <img class="logo" src="imagenes/logo.png">  
-            </a>
-            <a class="ingreso" href="Start.html" name="Opcion" value="1" style="color:#000000"> Atrás</a>
-        </div>
-           
-        <div class="cuadrado_solicitud">
-            <div class="saludo">Descubre los beneficios </br> que tienes por inscribir tu liga</div>
-            <div class="first">
-                <div>
-                    
-                </div>
-                <div>
-                  
-                </div>
-            </div>
-            
-            
-            <div class="second">
-                <div>
-                    
-                </div>
-                <div>
-                   
-                </div>
-            </div>
-            
-            <div class="mensaje">
-                ¿Estas interesado?</br>Envia tus datos y nos comunicamos contigo
-            </div>
-            
-            <div class="formulario">
-            <form action="solicitud.php" method="POST">
-         
-                <input  class="nom_solicitud" type="text" id="1" name="u" placeholder="Nombre completo"required><br>
-                <input  class="tel_solicitud" type="number" id="pass" name="c" placeholder="Celular"required><br>
-                <input  class="email_solicitud" type="email" id="em" name="e" placeholder="Email"required><br>
-                <textarea  class="comentario_solicitud" id="cm" name="comentarios" placeholder="Comentarios"required></textarea>
-                               
-                <button type="submit"  class="enviar" name="subir">Enviar</button><br>
-              
-            </form>
-            </div>
-            
-        </div>
-            
-            
-                 
-        </div>
-        
-        
+<head>
+    <title>FUTMX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="icon" href="imagenes/balon.png">
 
-    </body>
+    <script src="operaciones.js"></script>
+</head>
+<body>
+
+<div style="position: relative">
+
+    <div class="rectangulo">
+        <a href="Start.html">
+            <img class="logo" src="imagenes/logo.png">
+        </a>
+        <a class="ingreso" href="Start.html" name="Opcion" value="1" style="color:#000000"> Atrás</a>
+    </div>
+
+    <div class="cuadrado_solicitud">
+        <div class="degrade"></div>
+        <div class="saludo">Descubre los beneficios </br> que tienes por inscribir tu liga</div>
+        <div class="first">
+            <div class="cancha">
+                <img class="cancha_img" src="imagenes/3986690-ball-field-football-soccer-icon_112276.png">
+            </div>
+            <div class="text_cancha">
+                Administra las canchas que usaras durante la liga
+            </div>
+            <div class="posicion">
+                <img class="posicion_img" src="imagenes/Football_2-31_icon-icons.com_72101.png">
+            </div>
+            <div class="text_posicion">
+                Ve como se desarrolla tu liga con la tabla de posiones
+            </div>
+            <div class="partido">
+                <img class="partido_img" src="imagenes/Football_2-54_icon-icons.com_72092.png">
+            </div>
+            <div class="text_partido">
+                 Crea los partidos automaticamente
+            </div>
+            <div class="message">
+                <img class="message_img" src="imagenes/1486164733-111_79707.png">
+            </div>
+            <div class="text_message">
+                Recibe solicitudes de los equipos interesados en unirse
+            </div>
+            <div class="pago_arbitraje">
+                <img class="arbitraje_img" src="imagenes/Football_2-15_icon-icons.com_72063.png">
+            </div>
+            <div class="text_arbitraje">
+                Manejo automatico del pago de arbitraje en cada partido
+            </div>
+            <div class="equipo">
+                <img class="equipo_img" src="imagenes/Football_2-63_icon-icons.com_72058.png">
+            </div>
+            <div class="text_equipo">
+                Administra los equipos
+            </div>
+        </div>
+
+
+        <div class="mensaje">
+            ¿Estas interesado?</br>Envia tus datos y nos comunicamos contigo
+        </div>
+
+        <div class="formulario">
+            <form action="solicitud.php" method="POST">
+
+                <input class="nom_solicitud" type="text" id="1" name="u" placeholder="Nombre completo" required><br>
+                <input class="tel_solicitud" type="number" id="pass" name="c" placeholder="Celular" required><br>
+                <input class="email_solicitud" type="email" id="em" name="e" placeholder="Email" required><br>
+                <textarea class="comentario_solicitud" id="cm" name="comentarios" placeholder="Comentarios"
+                          required></textarea>
+
+                <button type="submit" class="enviar" name="subir">Enviar</button>
+                <br>
+
+            </form>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
 </html>
 
        
