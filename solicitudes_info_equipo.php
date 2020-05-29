@@ -303,7 +303,7 @@ session_start();
     }
 
     function aceptarModificacion(idSolicitud,id,dato,nuevoDato) {
-        if(confirm('¿Estás seguro que quieres eliminar este equipo?')){
+        if(confirm('¿Estás seguro que quieres cambiar este dato?')){
             cadena={
                 "idSolicitud":idSolicitud,
                 "id":id,

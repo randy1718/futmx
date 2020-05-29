@@ -704,24 +704,26 @@ input:focus, button:focus textarea:focus{
 
 .salir{
     position: absolute;
-    margin-top: 600px;
-    width: 100px;
-    margin-left: 125px;
-    margin-right: 125px;
-    background-color: #fd7f65;
-    padding: 10px 25px;
+    margin-top: 575px;
+    width: 400px;
+    height: 45px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: rgba(253,19,49,0.82);
+    color:#fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:20px normal normal uppercase;
+    font:45px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 31px;
-    color:black;
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.8);
+    border-bottom-left-radius: 31px;
 
 }
 .salir:hover{
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.3);
+    background-color: #fff;
+    color:black;
 }
 
 .capa{
@@ -805,72 +807,74 @@ input:focus, button:focus textarea:focus{
 
 .editar{
     position: absolute;
-    margin-top: 340px;
-    width: 260px;
+    margin-top: 350px;
+    width: 400px;
     height: 30px;
-    margin-left: 70px;
+    margin-left: 0px;
     margin-right: 75px;
-    background-color: #5FBAA7;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #aef1e1;
+    padding-top: 15px;
+    padding-bottom: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:30px normal normal uppercase;
+    font:40px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 15px;
+    border-radius: 0px;
     color:black;
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.8);
 }
 .editar:hover{
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.3);
+    background-color: #b3fff7;
 }
+
 .pagos{
     position: absolute;
-    margin-top: 420px;
-    width: 260px;
+    margin-top: 425px;
+    width: 400px;
     height: 30px;
-    margin-left: 70px;
+    margin-left: 0px;
     margin-right: 75px;
-    background-color: #5FBAA7;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #8ee0d1;
+    padding-top: 15px;
+    padding-bottom: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:30px normal normal uppercase;
+    font:40px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 15px;
+    border-radius: 0px;
     color:black;
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.8);
+
 }
 
 .pagos:hover{
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.3);
+    background-color: #b3fff7;
 }
+
 
 .begin{
     position: absolute;
     margin-top: 500px;
-    width: 260px;
+    width: 400px;
     height: 30px;
-    margin-left: 70px;
+    margin-left: 0px;
     margin-right: 75px;
-    background-color: #5FBAA7;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #6accb7;
+    padding-top: 15px;
+    padding-bottom: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:30px normal normal uppercase;
+    font:40px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 15px;
+    border-radius: 0px;
+    border:0px solid;
     color:black;
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.8);
+
 }
 
 .begin:hover{
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.2);
+    background-color: #b3fff7;
 }
 
 .informacion{
@@ -1018,24 +1022,24 @@ input:focus, button:focus textarea:focus{
 
 .subliga{
     position: absolute;
-    margin-top: 260px;
-    width: 260px;
+    margin-top: 275px;
+    width: 400px;
     height: 30px;
-    margin-left: 70px;
+    margin-left: 0px;
     margin-right: 75px;
-    background-color: #5FBAA7;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #ccffec;
+    padding-top: 15px;
+    padding-bottom: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:30px normal normal uppercase;
+    font:40px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 15px;
+    border-radius: 0px;
     color:black;
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.8);
+
 }
 
-.subliga:hover{
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.3);
+.subliga:hover {
+    background-color: #b3fff7;
 }

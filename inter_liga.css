@@ -655,24 +655,26 @@ textarea{
 
 .salir{
     position: absolute;
-    margin-top: 590px;
-    width: 100px;
-    margin-left: 125px;
-    margin-right: 125px;
-    background-color: #fd7f65;
-    padding: 10px 25px;
+    margin-top: 575px;
+    width: 400px;
+    height: 45px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: rgba(253,19,49,0.82);
+    color:#fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:20px normal normal uppercase;
+    font:45px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 31px;
-    color:black;
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.2);
+    border-bottom-left-radius: 31px;
 
 }
 .salir:hover{
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.5);
+    background-color: #fff;
+    color:black;
 }
 
 .opciones{
@@ -731,49 +733,50 @@ textarea{
 .begin{
     position: absolute;
     margin-top: 500px;
-    width: 260px;
+    width: 400px;
     height: 30px;
-    margin-left: 70px;
+    margin-left: 0px;
     margin-right: 75px;
-    background-color: #5FBAA7;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #6accb7;
+    padding-top: 15px;
+    padding-bottom: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:30px normal normal uppercase;
+    font:40px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 15px;
+    border-radius: 0px;
+    border:0px solid;
     color:black;
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.8);
+
 }
 
 .begin:hover{
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.2);
+    background-color: #b3fff7;
 }
 
 .subliga{
     position: absolute;
-    margin-top: 260px;
-    width: 260px;
+    margin-top: 275px;
+    width: 400px;
     height: 30px;
-    margin-left: 70px;
+    margin-left: 0px;
     margin-right: 75px;
-    background-color: #5FBAA7;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #ccffec;
+    padding-top: 15px;
+    padding-bottom: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:30px normal normal uppercase;
+    font:40px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 15px;
+    border-radius: 0px;
     color:black;
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.8);
+
 }
 
 .subliga:hover{
-    box-shadow: 0px 3px 6px rgba(12,38,9,0.3);
+    background-color: #b3fff7;
 }
 
 
@@ -888,49 +891,48 @@ textarea{
 
 .editar{
     position: absolute;
-    margin-top: 340px;
-    width: 260px;
+    margin-top: 350px;
+    width: 400px;
     height: 30px;
-    margin-left: 70px;
+    margin-left: 0px;
     margin-right: 75px;
-    background-color: #5FBAA7;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #aef1e1;
+    padding-top: 15px;
+    padding-bottom: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:30px normal normal uppercase;
+    font:40px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 15px;
+    border-radius: 0px;
     color:black;
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.8);
 }
 .editar:hover{
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.3);
+    background-color: #b3fff7;
 }
 
 .pagos{
     position: absolute;
-    margin-top: 420px;
-    width: 260px;
+    margin-top: 425px;
+    width: 400px;
     height: 30px;
-    margin-left: 70px;
+    margin-left: 0px;
     margin-right: 75px;
-    background-color: #5FBAA7;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #8ee0d1;
+    padding-top: 15px;
+    padding-bottom: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:30px normal normal uppercase;
+    font:40px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    border-radius: 15px;
+    border-radius: 0px;
     color:black;
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.8);
+
 }
 
 .pagos:hover{
-    box-shadow: 0px 3px 5px rgba(12,38,9,0.3);
+    background-color: #b3fff7;
 }
 
 .informacion{
@@ -1127,7 +1129,7 @@ textarea{
     position:absolute;
     width: 30px;
     height: 30px;
-    margin-left: 762px;
+    margin-left: 758px;
     margin-top: 5px;
 }
 
@@ -1148,7 +1150,7 @@ textarea{
     position: absolute;
     width: 800px;
     height: 520px;
-    background-color:rgba(168,255,214,1) ;
+    background-color: #c6c6c6;
     border-radius: 31px;
     margin-left: 350px;
     margin-top: -570px;
@@ -1515,11 +1517,12 @@ textarea{
 }
 
 .dias{
-    font:15px normal normal uppercase;
+    font:20px normal normal uppercase;
     font-family: Tw Cen MT,serif;
     position: absolute;
     color:black;
     margin-left: 30px;
+    margin-top: -30px;
 }
 
 .cb{
@@ -1536,7 +1539,7 @@ textarea{
 .dias_semana{
     font:22px normal normal uppercase;
     font-family: Tw Cen MT,serif;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 
 }
 
@@ -1560,12 +1563,12 @@ input[type="checkbox"]:checked{
 
 
 .NameSubliga{
-    border-radius:20px;
+    border-radius:10px;
     margin-bottom:20px;
     margin-right:139px;
     margin-left:60px;
     margin-top: 50px;
-    width:300px;
+    width:310px;
     height: 30px;
     padding:10px;
     padding-top: 15px;
@@ -1577,12 +1580,12 @@ input[type="checkbox"]:checked{
 }
 
 .FechaInicio{
-    border-radius:20px;
+    border-radius:10px;
     margin-bottom:20px;
     margin-right:139px;
     margin-left:60px;
     margin-top: 140px;
-    width:300px;
+    width:310px;
     height: 30px;
     padding:10px;
     padding-top: 15px;
@@ -1594,12 +1597,12 @@ input[type="checkbox"]:checked{
 }
 
 .FechaFin{
-    border-radius:20px;
+    border-radius:10px;
     margin-bottom:20px;
     margin-right:139px;
     margin-left:60px;
     margin-top: 220px;
-    width:300px;
+    width:310px;
     height: 30px;
     padding:10px;
     padding-top: 15px;
@@ -1612,16 +1615,17 @@ input[type="checkbox"]:checked{
 
 .agregarSubliga{
     position:absolute;
-    margin-top: 370px;
-    margin-left: 55px;
-    width: 690px;
-    height: 60px;
+    margin-top: 390px;
+    margin-left: 0px;
+    width: 800px;
+    height: 80px;
     background-color: #0059a5;
     color:#fff;
-    border-radius: 15px;
+    border-bottom-right-radius: 31px;
+    border-bottom-left-radius: 31px;
     cursor:pointer;
     border:0px solid #FFF;
-    font:25px normal normal uppercase;
+    font:35px normal normal uppercase;
     font-family: Tw Cen MT,serif;
     text-align: center;
     outline: none;
@@ -1638,7 +1642,6 @@ input[type="checkbox"]:checked{
     margin-left: 160px;
     margin-top: 290px;
     width: 500px;
-
     height: 60px;
 }
 
@@ -1654,9 +1657,9 @@ input[type="checkbox"]:checked{
 
 .lbel_h2{
     position: absolute;
-    margin-top: -43px;
+    margin-top: -22px;
     margin-bottom: 3px;
-    margin-left: 280px;
+    margin-left: 270px;
     color:#000;
     font:20px normal normal uppercase;
     font-family: Tw Cen MT,serif;
@@ -1693,8 +1696,8 @@ input[type="checkbox"]:checked{
 
 .fin{
     position: absolute;
-    margin-left: 280px;
-    margin-top: -18px;
+    margin-left: 270px;
+    margin-top: 0px;
     font:20px normal normal uppercase;
     font-family: Tw Cen MT,serif;
     border:0px solid;

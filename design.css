@@ -67,6 +67,7 @@ body::after{
 
 }
 
+
 .rectangulo {
     width: 1533px;
     height: 60px;
@@ -140,6 +141,10 @@ body::after{
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #5FBAA7;
+}
+
+z{
+    color: #89d3b9;
 }
 
 .cuadrado_ingreso {

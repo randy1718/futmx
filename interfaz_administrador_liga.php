@@ -143,7 +143,7 @@
     <a href="cuenta_liga.php" class="editar" name="Opcion" value="1" >Cuenta</a>
     <a href="subligas.php" class="subliga" name="Opcion" value="1" >Subligas</a>
     <a href="pago_arbitraje.php" class="pagos" name="Opcion" value="1" >Pagos</a>
-    <a href="Start.html" class="salir" name="Opcion" value="1" >Salir</a>
+    <a href="Start.html" class="salir" name="Opcion" value="1" >Cerrar sesión</a>
 </div>
 
 <?php

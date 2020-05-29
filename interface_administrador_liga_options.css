@@ -2114,3 +2114,14 @@ position: absolute;
     -webkit-border-radius: 6px;
     border-spacing: 0px;
 }
+
+.form_subliga{
+    position: absolute;
+    width: 800px;
+    height: 520px;
+    background-color:#fff;
+    border-radius: 31px;
+    margin-left: 350px;
+    margin-top: -570px;
+    display: none;
+}
