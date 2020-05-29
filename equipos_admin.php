@@ -39,10 +39,10 @@ session_start();
 <div style="position: relative">
 
     <div class="rectangulo">
-        <a href="interfaz_administrador_liga.php">
+        <a href="inter_admin_liga.php">
             <img class="logo" src="imagenes/logo.png">
         </a>
-        <a class="ingreso" href="interfaz_administrador_liga.php" name="Opcion" value="1" style="color:#000000"> Atrás</a>
+        <a class="ingreso" href="inter_admin_liga.php" name="Opcion" value="1" style="color:#000000"> Atrás</a>
     </div>
 
     <div class="recuadro">
@@ -50,7 +50,7 @@ session_start();
 
             <?php
             $usuar = $_SESSION["usuario"];
-            $consulta = "select * from equipos inner join li ga on equipos.idLiga=liga.idLiga inner join usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
+            $consulta = "select * from equipos inner join liga on equipos.idLiga=liga.idLiga inner join usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
             $ejecutar = mysqli_query($conexion, $consulta) or die("problems:" . mysqli_error($conexion));
 
             if (!$ejecutar) {
@@ -63,15 +63,15 @@ session_start();
 
                 $id=$mostrar['idEquipo'];
                 $nombre = $mostrar['NombreEquipo'];
-                $foto = $mostrar['imagenEquipo'];
-                $imagen =base64_encode($foto);
-                $tipoFoto=$mostrar['tipoImagen'];
+
+                $dirFoto = $mostrar['dirFoto'];
 
                 ?>
                 <button class="balls" onclick="abrir(<?php echo $id ?>)">
                     <div class="box_equipo">
                         <?php
-                        echo "<img  class='img_equipo' src='data:" . $tipoFoto . ";base64," . $imagen . "'>";
+                        /**echo "<img  class='img_equipo' src='data:" . $tipoFoto . ";base64," . $imagen . "'>";*/
+                        echo "<img  class='img_equipo' src='imagenes/" . $dirFoto . "'>";
                         ?>
                         <div class="n_equipo"><?php echo $nombre ?></div>
                     </div>

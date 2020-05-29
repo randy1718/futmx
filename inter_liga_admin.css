@@ -636,8 +636,8 @@ textarea{
     cursor:pointer;
 }
 
-    #slidebar{
-    top:62px;
+#slidebar{
+    top:54px;
     left: 1600px;
     width: 400px;
     height:660px;
@@ -667,7 +667,7 @@ textarea{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font:41px normal normal uppercase;
+    font:45px normal normal uppercase;
     font-family: Tw Cen MT,serif;
     border-bottom-left-radius: 31px;
 

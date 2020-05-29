@@ -37,10 +37,10 @@ session_start();
 <div style="position: relative">
 
     <div class="rectangulo">
-        <a href="interfaz_administrador_liga.php">
+        <a href="inter_admin_liga.php">
             <img class="logo" src="imagenes/logo.png">
         </a>
-        <a class="ingreso" href="interfaz_administrador_liga.php" name="Opcion" value="1" style="color:#000000"> Atrás</a>
+        <a class="ingreso" href="inter_admin_liga.php" name="Opcion" value="1" style="color:#000000"> Atrás</a>
     </div>
 
     <br>
@@ -52,7 +52,7 @@ session_start();
 
             <?php
             $usuar = $_SESSION["usuario"];
-            $consulta = "select * from cancha inner join usuario on cancha.idUsuario=usuario.idUsuario where NombreUsuario='$usuar'";
+            $consulta = "select * from cancha inner join liga on liga.idLiga=cancha.liga inner join usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
             $ejecutar = mysqli_query($conexion, $consulta) or die("problems:" . mysqli_error($conexion));
 
             if (!$ejecutar) {

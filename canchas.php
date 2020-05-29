@@ -52,7 +52,7 @@ session_start();
 
                     <?php
                     $usuar = $_SESSION["usuario"];
-                    $consulta = "select * from cancha inner join usuario on cancha.idUsuario=usuario.idUsuario where NombreUsuario='$usuar'";
+                    $consulta = "select * from cancha inner join liga on liga.idLiga=cancha.liga inner join usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
                     $ejecutar = mysqli_query($conexion, $consulta) or die("problems:" . mysqli_error($conexion));
 
                     if (!$ejecutar) {
@@ -111,7 +111,7 @@ session_start();
                         }
                         function cerrarFormFoto() {
                             document.getElementById('cambiar_foto').style.display = "none";
-                            document.getElementById('cap').classList.toggle('cap');
+
                         }
 
                         function abrirCreacion() {
@@ -220,6 +220,23 @@ session_start();
                     <input class="Ciudad" type="text" id="ciudad" name="CiudadCancha" placeholder="Ciudad" required><br>
                     <label class="lbel">Imagen de la cancha:</label>
                     <input type="file" class="PictureCancha"  name="fot_cancha"  required>
+                    <div class="opciones_dias">
+                        <div class="dias_semana">Escoge los dias de la semana:</div>
+                        <br><input type="checkbox" class="cb" value="lunes" name="lu"><div class="dias">Lunes</div>
+                        <br><input type="checkbox" class="cb" value="martes" name="ma"><div class="dias">Martes</div>
+                        <br><input type="checkbox" class="cb" value="miercoles" name="mi"><div class="dias">Miercoles</div>
+                        <br><input type="checkbox" class="cb" value="jueves" name="ju"><div class="dias">Jueves</div>
+                        <br><input type="checkbox" class="cb" value="viernes" name="vi"><div class="dias">Viernes</div>
+                        <br><input type="checkbox" class="cb" value="sabado" name="sa"><div class="dias">Sabado</div>
+                        <br><input type="checkbox" class="cb" value="domingo" name="do"><div class="dias">Domingo</div>
+                    </div>
+
+                    <div class="horario_1">
+                        <div class="lbel_h1">Hora de inicio</div>
+                        <input type="time" class="inicio" value="00:00" name="horaInicio" required>
+                        <div class="lbel_h2">Hora de fin</div>
+                        <input type="time" class="fin" value="23:59" name="horaFin" required>
+                    </div>
 
                     <button class="agregarCancha" >Agregar Cancha</button>
 

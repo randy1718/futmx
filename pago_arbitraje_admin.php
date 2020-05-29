@@ -37,10 +37,10 @@ session_start();
 <div style="position: relative">
 
     <div class="rectangulo">
-        <a href="interfaz_administrador_liga.php">
+        <a href="inter_admin_liga.php">
             <img class="logo" src="imagenes/logo.png">
         </a>
-        <a class="ingreso" href="interfaz_administrador_liga.php" name="Opcion" value="1" style="color:#000000">
+        <a class="ingreso" href="inter_admin_liga.php" name="Opcion" value="1" style="color:#000000">
             Atrás</a>
     </div>
 

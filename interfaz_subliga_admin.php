@@ -37,10 +37,7 @@ $im=base64_decode($imagen);
 </head>
 <body class="admin_liga">
 <div style="position: relative">
-    <div class="ad_liga">
-        <div class="saludo">Bienvenido a <?php echo $_SESSION["nombreLiga"] ?> !</div>
 
-    </div>
 
     <div class="rectangulo">
         <a href="interfaz_administrador_liga.php">
@@ -50,56 +47,77 @@ $im=base64_decode($imagen);
 
     </div>
 
+    <div class="ad_liga">
+        <div class="saludo">Bienvenido de nuevo, <?php echo $_SESSION["usuario"] ?> !</div>
 
-    <div class="opciones">
     </div>
 
-    <a href="canchas.php" name="Opcion" value="1" style="color:#000000" title="Canchas" onmouseover="window.status='Canchas';return true" onmouseout="window.status='';return true" >
-        <div class="canchas">
+    <div class="opciones_1">
+        <a href="canchas.php" name="Opcion" value="1" style="color:#000000" title="Canchas" onmouseover="window.status='Canchas';return true" onmouseout="window.status='';return true" >
+            <div class="canchas">
+                <div class="im_cac">
+                    <img class="im_c" src="imagenes/Football_2-36_icon-icons.com_72119.png" >
+                </div>
+                <div class="txt2">Canchas</div>
 
-            <img class="im" src="imagenes/canchas.jpg" >
-            <p class="txt2">Canchas</p>
-
-        </div>
-    </a>
-
-    <a href="tabla_posiciones.php" name="Opcion" value="1" style="color:#000000">
-        <div class="tabla_posiciones">
-
-            <img class="im" src="imagenes/01.jpg">
-            <p class="txt3">Posiciones</p>
-
-        </div>
-    </a>
-
-    <a href="partidos.php" name="Opcion" value="1" style="color:#000000">
-        <div class="partidos">
-            <div class="ima_dad">
-                <img class="ima" src="imagenes/img_410939.png">
             </div>
-            <p class="txt4">Partidos</p>
+        </a>
 
-        </div>
-    </a>
+        <a href="solicitudes_equipos.php" name="Opcion" value="1" style="color:#000000">
+            <div class="solicitudes">
+                <div class="im_sas">
+                    <img class="im_s" src="imagenes/1486164749-120_79719.png">
+                </div>
+                <div class="txt2">Solicitudes</div>
 
-    <a href="equipos.php" name="Opcion" value="1" style="color:#000000">
-        <div class="equipos">
+                <?php if($numero_solicitudes>0){?>
+                    <span class="numero" id="number"><div class="num"><?php echo"".$numero_solicitudes?></div></span>
+                <?php }?>
 
-            <img class="im" src="imagenes/g.jpg">
-            <p class="txt5">Equipos</p>
 
-        </div>
-    </a>
+            </div>
+        </a>
 
-    <a href="solicitudes_equipos.php" name="Opcion" value="1" style="color:#000000">
-        <div class="solicitudes">
+    </div>
 
-            <img class="im" src="imagenes/Grupo 10.png">
-            <p class="txt6">Solicitudes</p>
 
-        </div>
-    </a>
 
+    <div class="opciones">
+
+
+
+
+        <a href="Posiciones.php" name="Opcion" value="1" style="color:#000000">
+            <div class="tabla_posiciones">
+                <div class="im_pap">
+                    <img class="im_p" src="imagenes/Football_2-20_icon-icons.com_72099.png">
+                </div>
+                <div class="txt2">Posiciones</div>
+
+            </div>
+        </a>
+
+        <a href="partidos.php" name="Opcion" value="1" style="color:#000000">
+            <div class="partidos">
+                <div class="ima_dad">
+                    <img class="ima" src="imagenes/Football_2-30_icon-icons.com_72093.png">
+                </div>
+                <div class="txt2">Partidos</div>
+
+            </div>
+        </a>
+
+        <a href="equipos.php" name="Opcion" value="1" style="color:#000000">
+            <div class="equipos">
+                <div class="im_ede">
+                    <img class="im_e" src="imagenes/Football_2-62_icon-icons.com_72096.png">
+                </div>
+                <div class="txt2">Equipos</div>
+
+            </div>
+        </a>
+
+    </div>
 
 
 

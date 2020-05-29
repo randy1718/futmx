@@ -99,28 +99,28 @@ session_start();
 
     <form action="crearSubliga.php" method="POST">
 
-        <input class="NameSubliga" type="text" id="nombreCancha" name="NombreCancha" placeholder="Nombre subliga" required><br>
+        <input class="NameSubliga" type="text" name="NombreSubliga" placeholder="Nombre subliga" required><br>
         <div class="lbel_f1">Fecha de inicio</div>
-        <input class="FechaInicio" type="date" id="capacidad" name="CapacidadCancha" placeholder="Fecha de inicio" required><br>
+        <input class="FechaInicio" type="date"  name="fechaInicio" placeholder="Fecha de inicio" required><br>
         <div class="lbel_f2">Fecha de fin</div>
-        <input class="FechaFin" type="date"  <input classid="ubicacion" name="UbicacionCancha" placeholder="Fecha de fin" required><br>
+        <input class="FechaFin" type="date" name="fechaFin" placeholder="Fecha de fin" required><br>
 
         <div class="opciones_dias">
             <div class="dias_semana">Escoge los dias de la semana:</div>
-            <br><input type="checkbox" class="cb"><div class="dias">Lunes</div>
-            <br><input type="checkbox" class="cb"><div class="dias">Martes</div>
-            <br><input type="checkbox" class="cb"><div class="dias">Miercoles</div>
-            <br><input type="checkbox" class="cb"><div class="dias">Jueves</div>
-            <br><input type="checkbox" class="cb"><div class="dias">Viernes</div>
-            <br><input type="checkbox" class="cb"><div class="dias">Sabado</div>
-            <br><input type="checkbox" class="cb"><div class="dias">Domingo</div>
+            <br><input type="checkbox" class="cb" value="lunes" name="lu"><div class="dias">Lunes</div>
+            <br><input type="checkbox" class="cb" value="martes" name="ma"><div class="dias">Martes</div>
+            <br><input type="checkbox" class="cb" value="miercoles" name="mi"><div class="dias">Miercoles</div>
+            <br><input type="checkbox" class="cb" value="jueves" name="ju"><div class="dias">Jueves</div>
+            <br><input type="checkbox" class="cb" value="viernes" name="vi"><div class="dias">Viernes</div>
+            <br><input type="checkbox" class="cb" value="sabado" name="sa"><div class="dias">Sabado</div>
+            <br><input type="checkbox" class="cb" value="domingo" name="do"><div class="dias">Domingo</div>
         </div>
 
         <div class="horario">
             <div class="lbel_h1">Hora de inicio</div>
-            <input type="time" class="inicio">
+            <input type="time" class="inicio" value="00:00" name="horaInicio" required>
             <div class="lbel_h2">Hora de fin</div>
-            <input type="time" class="fin">
+            <input type="time" class="fin" value="23:59" name="horaFin" required>
         </div>
 
         <button class="agregarSubliga" >Crear subliga</button>
