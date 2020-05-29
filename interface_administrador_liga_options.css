@@ -1572,8 +1572,7 @@ textarea {
 }
 
 th, td, tr {
-    padding-left: 5px;
-    padding-right: 5px;
+
     padding-bottom: 5px;
     padding-top: 5px;
     border: 0.5px solid #D8D8D8;
@@ -2022,4 +2021,96 @@ thead {
     font: 50px normal normal uppercase;
     font-family: Tw Cen MT, serif;
     margin-top: 100px;
+}
+
+.cuadro_actEquipo{
+position: absolute;
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 358.8px;
+    display: none;
+}
+
+.cuadro_actJugador{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 358.8px;
+    display: none;
+}
+
+.cuadro_delEquipo{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 358.8px;
+    display: none;
+}
+
+.mini_x{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 765px;
+}
+
+.tabla_soli{
+    position: absolute;
+    width: 620px;
+    height: 450px;
+    overflow-y: auto;
+    margin-left: 90px;
+}
+
+.tabla_act{
+    width: 620px;
+    position: absolute;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 60px;
+    border: 1px solid #828D8B;
+    font-family: Tw Cen MT, serif;
+    font-size: 23px;
+    outline: none;
+    overflow: auto;
+    -webkit-border-radius: 6px;
+    border-spacing: 0px;
+}
+
+.tabla_act2{
+    width: 620px;
+    position: absolute;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 60px;
+    border: 1px solid #828D8B;
+    font-family: Tw Cen MT, serif;
+    font-size: 23px;
+    outline: none;
+    overflow: auto;
+    -webkit-border-radius: 6px;
+    border-spacing: 0px;
+}
+
+.tabla_act3{
+    width: 620px;
+    position: absolute;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 60px;
+    border: 1px solid #828D8B;
+    font-family: Tw Cen MT, serif;
+    font-size: 23px;
+    outline: none;
+    -webkit-border-radius: 6px;
+    border-spacing: 0px;
 }

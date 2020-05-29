@@ -67,22 +67,162 @@ session_start();
 </div>
 
 <div class="cuadro_actEquipo" id="ae">
+    <a href="javascript:cerrar1()">
+        <img class="mini_x" src="imagenes/5a5798809538462e5a82d431.png">
+    </a>
+    <div class="tabla_soli">
+        <table border="1" align="center" bgColor="FFFFFF" class="tabla_act" id="solicitudes_Equipo">
+            <thead>
+            <tr>
+                <td>Equipo</td>
+                <td>Nuevo nombre</td>
+                <td>Aceptar</td>
 
-</div>
+            </tr>
+            </thead>
 
-<div class="cuadro_actJugador" id="aj">
+            <?php
+            $usuar= $_SESSION["usuario"];
+            $consulta="select * from solicitudesactualizacionequipo inner join equipos on equipos.idEquipo=solicitudesactualizacionequipo.idEquipo inner join liga on liga.idLiga=equipos.idLiga inner join usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
+            $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
 
-</div>
+            if(!$ejecutar){
+                echo "hubo algun error";
+            }else{
+                echo"";
+            }
 
-<div class="cuadro_detEquipo" id="de">
+            while($mostrar= mysqli_fetch_array($ejecutar)){
+            $id=$mostrar['idEquipo'];
+            $nombre=$mostrar['NombreEquipo'];
+            $dato=$mostrar['NombreNuevo'];
+            ?>
+                <tr>
+                    <td><?php echo $nombre ?></td>
+                    <td><?php echo $dato ?></td>
+                    <td>
+                        <button class="eliminar" onclick="aceptarCambio('<?php echo $id?>','<?php echo $dato?>')">
 
-</div>
+                        </button>
+                    </td>
+
+
+                </tr>
+                <?php
+            }
+            ?>
+        </table>
+    </div>
+    </div>
+
+    <div class="cuadro_actJugador" id="aj">
+        <a href="javascript:cerrar2()">
+            <img class="mini_x" src="imagenes/5a5798809538462e5a82d431.png">
+        </a>
+        <div class="tabla_soli">
+            <table border="1" align="center" bgColor="FFFFFF" class="tabla_act2" id="solicitudes_Equipo">
+                <thead>
+                <tr>
+                    <td>Persona</td>
+                    <td>Dato a cambiar</td>
+                    <td>Nuevo dato</td>
+                    <td>Aceptar</td>
+
+
+                </tr>
+                </thead>
+
+                <?php
+                $usuar= $_SESSION["usuario"];
+                $consulta="select * from solicitudesactualizacion inner join usuarios on usuarios.idUsuario=solicitudesactualizacion.idUsuario  inner join liga on liga.idLiga=solicitudesactualizacion.liga inner join usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
+                $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
+
+                if(!$ejecutar){
+                    echo "hubo algun error";
+                }else{
+                    echo"";
+                }
+
+                while($mostrar= mysqli_fetch_array($ejecutar)){
+                    $idSolicitud=$mostrar['idSolicitud'];
+                    $id=$mostrar['idUsuario'];
+                    $nombre=$mostrar['Nombre'];
+                    $dato=$mostrar['nombreCampo'];
+                    $datoNuevo=$mostrar['nuevoDato'];
+                    ?>
+                    <tr>
+                        <td><?php echo $nombre ?></td>
+                        <td><?php echo $dato ?></td>
+                        <td><?php echo $datoNuevo ?></td>
+
+                        <td>
+                            <button class="eliminar" onclick="aceptarModificacion('<?php echo $idSolicitud?>','<?php echo $id?>','<?php echo $dato?>','<?php echo $datoNuevo?>')">
+
+                            </button>
+                        </td>
+
+
+                    </tr>
+                    <?php
+                }
+                ?>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="cuadro_delEquipo" id="de">
+        <a href="javascript:cerrar3()">
+            <img class="mini_x" src="imagenes/5a5798809538462e5a82d431.png">
+        </a>
+        <div class="tabla_soli">
+            <table border="1" align="center" bgColor="FFFFFF" class="tabla_act3" id="solicitudes_Equipo">
+                <thead>
+                <tr>
+                    <td>Equipo</td>
+                    <td>Aceptar Eliminacion</td>
+
+                </tr>
+                </thead>
+
+                <?php
+                $usuar= $_SESSION["usuario"];
+                $consulta="select * from solicitudeseliminacionequipo  inner join equipos on solicitudeseliminacionequipo.idEquipo=equipos.idEquipo  inner join liga on liga.idLiga=equipos.idLiga inner join usuario on Administrador=documento_identidad where NombreUsuario='$usuar'";
+                $ejecutar= mysqli_query($conexion,$consulta) or die ("problems:". mysqli_error($conexion));
+
+                if(!$ejecutar){
+                    echo "hubo algun error";
+                }else{
+                    echo"";
+                }
+
+                while($mostrar= mysqli_fetch_array($ejecutar)){
+
+                    $id=$mostrar['idEquipo'];
+                    $nombre=$mostrar['NombreEquipo'];
+                    ?>
+                    <tr>
+                        <td><?php echo $nombre ?></td>
+                        <td>
+                            <button class="eliminar" onclick="aceptarEliminacion('<?php echo $id?>')">
+
+                            </button>
+                        </td>
+
+
+                    </tr>
+                    <?php
+                }
+                ?>
+            </table>
+        </div>
+    </div>
 
 
 </body>
 
 <script type="text/javascript">
-    
+
     function abrir1() {
         document.getElementById('ae').style.display = "block";
         document.getElementById('capa').classList.toggle('capa');
@@ -97,7 +237,7 @@ session_start();
         document.getElementById('de').style.display = "block";
         document.getElementById('capa').classList.toggle('capa');
     }
-    
+
     function cerrar1() {
         document.getElementById('ae').style.display = "none";
         document.getElementById('capa').classList.toggle('capa');
@@ -112,7 +252,83 @@ session_start();
         document.getElementById('de').style.display = "none";
         document.getElementById('capa').classList.toggle('capa');
     }
-    
+
+    function aceptarCambio(id, dato) {
+        if(confirm('¿Estas seguro que quieres modificar este equipo?')){
+            cadena={
+                "id":id,
+                "nombreNuevo":dato,
+            };
+
+            $.ajax({
+                type:"POST",
+                url:"cambiarNombreEquipo.php",
+                data:cadena,
+                success:function(r){
+                    if(r==1){
+                        alert("¡Hubo un error!");
+                        window.location.href="solicitudes_info_equipo.php";
+                    }else{
+                        alert("¡Se modifico correctamente!");
+                        window.location.href="solicitudes_info_equipo.php";
+                    }
+                }
+
+            });
+        }
+    }
+
+    function aceptarEliminacion(id) {
+        if(confirm('¿Estás seguro que quieres eliminar este equipo?')){
+            cadena={
+                "id":id,
+            };
+
+            $.ajax({
+                type:"POST",
+                url:"EliminarEquipo.php",
+                data:cadena,
+                success:function(r){
+                    if(r==1){
+                        alert("¡Hubo un error!");
+                        window.location.href="solicitudes_info_equipo.php";
+                    }else{
+                        alert("¡Se elimino correctamente!");
+                        window.location.href="solicitudes_info_equipo.php";
+                    }
+                }
+
+            });
+        }
+    }
+
+    function aceptarModificacion(idSolicitud,id,dato,nuevoDato) {
+        if(confirm('¿Estás seguro que quieres eliminar este equipo?')){
+            cadena={
+                "idSolicitud":idSolicitud,
+                "id":id,
+                "dato":dato,
+                "nuevo":nuevoDato
+            };
+
+            $.ajax({
+                type:"POST",
+                url:"modificarInformacion.php",
+                data:cadena,
+                success:function(r){
+                    if(r==1){
+                        alert("¡Hubo un error!");
+                        window.location.href="solicitudes_info_equipo.php";
+                    }else{
+                        alert("¡Se modifico correctamente!");
+                        window.location.href="solicitudes_info_equipo.php";
+                    }
+                }
+
+            });
+        }
+    }
+
 </script>
 
 

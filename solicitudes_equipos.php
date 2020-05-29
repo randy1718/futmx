@@ -70,7 +70,7 @@ session_start();
         while($mostrar= mysqli_fetch_array($ejecutar)){
            $id=$mostrar['Cedula_Usuario'];
            $nombre=$mostrar['Nombre_Usuario']; 
-           $correo=$mostrar['Correo'];
+           $correo=$mostrar['email'];
            $nombreEquipo=$mostrar['Nombre_Equipo'];
            $pass=$mostrar['Contraseña']; 
         ?>

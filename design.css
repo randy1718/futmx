@@ -371,6 +371,113 @@ h1 {
     position: absolute;
 }
 
+.texto_conocer{
+    width: 750px;
+    position: absolute;
+    height: 150px;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(167,226,255,0.32);
+    font: 39px normal normal uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-family: Tw Cen MT, serif;
+    border-radius: 20px;
+    color: #7a1e00;
+
+}
+
+.text_info{
+    width: 750px;
+    position: absolute;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 242px;
+    font: 38px normal normal uppercase;
+    text-align: center;
+    font-family: Tw Cen MT, serif;
+
+}
+
+.t_1{
+    width: 680px;
+    position: absolute;
+    height: 70px;
+    margin-left: 80px;
+    margin-top: 315px;
+    padding-top: 30px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(206,233,197,0.68);
+    font: 36px normal normal uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-family: Tw Cen MT, serif;
+    color: #211da2;
+
+}
+
+.t_2{
+    width: 680px;
+    position: absolute;
+    height: 100px;
+    margin-left: 80px;
+    margin-top: 410px;
+    padding-top: 15px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(206,233,197,0.68);
+    font: 35px normal normal uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-family: Tw Cen MT, serif;
+    color: #211da2;
+
+}
+
+.t_3{
+    width: 680px;
+    position: absolute;
+    height: 100px;
+    margin-left: 80px;
+    padding-top: 15px;
+    margin-top: 520px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    background-color: rgba(206,233,197,0.68);
+    font: 35px normal normal uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-family: Tw Cen MT, serif;
+    color: #211da2;
+
+}
+
+.t_4{
+    width: 680px;
+    position: absolute;
+    height: 90px;
+    padding-top: 15px;
+    margin-left: 80px;
+    margin-top: 630px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    background-color: rgba(206,233,197,0.68);
+    font: 35px normal normal uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-family: Tw Cen MT, serif;
+    color: #211da2;
+
+}
+
 
 input:focus, button:focus textarea:focus {
     border-radius: 31px;

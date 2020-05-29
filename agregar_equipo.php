@@ -34,7 +34,7 @@ $mostrar = mysqli_fetch_array($ejecutar1);
 $idLiga = $mostrar["idLiga"];
   
  $sql = "insert into equipos(admin_equipo,NombreEquipo,idLiga) values  ('$id','$nombreEquipo','$idLiga') ";
- $sql1="insert into usuario(idTipoUsuario, NombreUsuario, documento_identidad,Correo,Contraseña) values('3','$nombre','$id','$correo','$contrase')";
+ $sql1="insert into usuarios(idUsuario, Nombre,Correo,Contraseña,idTipo) values('$id','$nombre','$correo','$contrase','2')";
  $sql5="delete from solicitudesadminequipo where Cedula_Usuario='$id'";
  
  $ejecutar2 = mysqli_query($conexion, $sql1) or die("problems:" . mysqli_error($conexion));
